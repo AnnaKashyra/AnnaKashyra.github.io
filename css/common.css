@@ -1,0 +1,13 @@
+html {
+--primary-text-color: #000;
+--primary-bg-color: #fff;
+}
+
+footer {
+--footer-text-color: #fff;
+--footer-bg-color: #000;
+}
+
+h1{
+    color: chartreuse;
+}

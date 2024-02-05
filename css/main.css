@@ -1,0 +1,16 @@
+@import url(/css/common.css);
+
+* {
+    margin: 0;
+    padding: 0;
+   }
+
+body {
+    color: var(--primary-text-color);
+    background-color: var(--primary-bg-color);
+}
+
+footer{
+    color: var(--footer-text-color);
+    background-color: var(--footer-bg-color);
+}
