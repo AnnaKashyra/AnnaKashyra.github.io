@@ -1,13 +1,19 @@
-html {
---primary-text-color: #000;
---primary-bg-color: #fff;
+:root {
+  --primary-text-color: #000;
+  --primary-bg-color: #fff;
+  --primary-font-family: "Roboto", sans-serif;
+  --primary-font-size: 0.875rem;
 }
 
 footer {
---footer-text-color: #fff;
---footer-bg-color: #000;
+  --footer-text-color: #fff;
+  --footer-bg-color: #000;
 }
 
-h1{
-    color: chartreuse;
+h1 {
+  color: chartreuse;
+}
+
+a {
+  text-decoration: none;
 }

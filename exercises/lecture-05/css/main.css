@@ -1,0 +1,22 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Task 3 */
+div {
+  font-size: 1em;
+}
+
+span {
+  font-size: 1.6em;
+}
+
+/* Task 4 */
+strong {
+  font-size: 1.6rem;
+}
+
+/* Task 5 */
+ul {
+  list-style-type: square;
+}

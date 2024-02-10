@@ -1,0 +1,203 @@
+/* Task 2*/
+
+h1,
+h2,
+h3 {
+  color: gray;
+}
+
+#main {
+  color: #e60202;
+}
+
+.h2 {
+  color: red;
+}
+
+.heading {
+  color: green;
+}
+
+/* Task 3 */
+
+ul > li {
+  font-weight: 700;
+}
+
+section > p {
+  color: red;
+}
+
+section p {
+  font-size: x-large;
+}
+
+/* Task 4 */
+
+h1:first-of-type + h2 {
+  color: indigo;
+}
+
+p.first a {
+  color: green;
+}
+
+p .first a {
+  color: green;
+}
+
+div ~ p {
+  color: salmon;
+}
+
+/* Task 5 */
+.named {
+  > .black {
+    color: black;
+  }
+
+  > .blue {
+    color: blue;
+  }
+
+  > .green {
+    color: green;
+  }
+
+  > .red {
+    color: red;
+  }
+
+  > .yellow {
+    color: yellow;
+  }
+
+  > .white {
+    color: white;
+    background-color: black;
+  }
+}
+
+.hex {
+  > .black {
+    color: #000000;
+  }
+
+  > .blue {
+    color: #0000ff;
+  }
+
+  > .green {
+    color: #008000;
+  }
+
+  > .red {
+    color: #ff0000;
+  }
+
+  > .yellow {
+    color: #ffff00;
+  }
+
+  > .white {
+    color: #ffffff;
+    background-color: #000000;
+  }
+}
+
+.rgb {
+  > .black {
+    color: rgb(0, 0, 0);
+  }
+
+  > .blue {
+    color: rgb(0, 0, 255);
+  }
+
+  > .green {
+    color: rgb(0, 128, 0);
+  }
+
+  > .red {
+    color: rgb(255, 0, 0);
+  }
+
+  > .yellow {
+    color: rgb(255, 255, 0);
+  }
+
+  > .white {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+  }
+}
+
+.percent {
+  > .black {
+    color: hsl(0, 0%, 0%);
+  }
+
+  > .blue {
+    color: hsl(240, 100%, 50%);
+  }
+
+  > .green {
+    color: hsl(120, 100%, 25%);
+  }
+
+  > .red {
+    color: hsl(0, 100%, 50%);
+  }
+
+  > .yellow {
+    color: hsl(60, 100%, 50%);
+  }
+
+  > .white {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(0, 0%, 0%);
+  }
+}
+
+.alfa {
+  > .black {
+    color: rgba(0, 0, 0, 1);
+  }
+
+  > .blue {
+    color: rgba(0, 0, 255, 1);
+  }
+
+  > .green {
+    color: rgba(0, 128, 0, 1);
+  }
+
+  > .red {
+    color: rgba(255, 0, 0, 1);
+  }
+
+  > .yellow {
+    color: rgba(255, 255, 0, 1);
+  }
+
+  > .white {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(0, 0, 0, 1);
+  }
+}
+
+/* Task 6 */
+.translucent-box {
+  width: 100px;
+  height: 100px;
+  background-color: hsl(0, 100%, 50%);
+}
+
+/* Task 7 */
+body {
+  font-size: 140%;
+}
+
+h1 {
+  font-size: 240%;
+}

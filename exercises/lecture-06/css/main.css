@@ -1,0 +1,82 @@
+/* Task 2 */
+a {
+  color: indigo;
+}
+
+a:visited {
+  color: gold;
+}
+
+a:hover {
+  color: salmon;
+}
+
+a:active {
+  color: red;
+}
+
+a:focus {
+  color: orange;
+}
+
+/* Task 3 */
+input:in-range {
+  background-color: rgb(0 255 0 / 0.25);
+}
+
+input:out-of-range {
+  background-color: rgb(255 0 0 / 0.25);
+}
+
+/* Task 4 */
+.task4 li:first-child {
+  color: orange;
+}
+
+/* Task 5 */
+.task5 ul :first-of-type {
+  color: orange;
+}
+
+/* Task 6 */
+.task6 ul :last-of-type {
+  color: orange;
+}
+
+/* Task 7 */
+.task7 li:not(.first-item) {
+  color: orange;
+}
+
+.task7 li:not(.first-item):not(:last-of-type) {
+  background: yellow;
+  color: black;
+}
+
+/* Task 8 */
+ol :nth-child(2) {
+  color: orange;
+}
+
+ol :nth-child(2n) {
+  color: orange;
+}
+
+ol :nth-child(2n + 6) {
+  color: orange;
+}
+
+/* Task 9 */
+.ua::before{
+  content: "Слава "
+}
+
+/* Task 10 */
+.hero::after{
+  content: " слава!";
+}
+
+/* Task 11 */
+.cont::before{
+  content: "\0A7";
+}
