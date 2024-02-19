@@ -1,0 +1,32 @@
+/* Task 1 */
+.negative {
+  height: 20em;
+  background: linear-gradient(
+    to left,
+    rgb(208, 226, 242) -50%,
+    rgb(157, 183, 207) -10%,
+    rgb(90, 133, 174) 0%,
+    rgb(25, 64, 100) 100%,
+    rgb(5, 35, 63) 150%
+  );
+}
+
+.percents {
+  height: 20em;
+  background: linear-gradient(
+    to bottom,
+    rgb(191, 231, 206) 2em,
+    rgb(136, 183, 154) 4em,
+    rgb(102, 154, 122) 8em,
+    rgb(65, 121, 87) 16em,
+    rgb(39, 89, 59) 32em,
+    rgb(20, 63, 37) 64em,
+    rgb(8, 41, 22) 128em
+  );
+}
+
+.radial {
+  height: 20em;
+  background: radial-gradient(ellipse at top, #db9d31, transparent),
+    radial-gradient(ellipse at bottom, #db3131, transparent);
+}

@@ -1,0 +1,79 @@
+/* Task 1 */
+.box {
+  padding: 10px 20px 25px;
+  margin: 25px 20px;
+}
+
+/* Task 2 */
+.box {
+  width: 300px;
+  padding: 10px;
+  border: dashed 2px green;
+}
+/* Ширина блоку = 300 + 10x2 + 2x2 = 324px */
+
+/* Task 3 */
+.first-box {
+  width: 200px;
+  height: 100px;
+  border: 8px solid blue;
+  padding: 20px;
+  background: yellow;
+}
+/* Ширина блоку = 200 + 20x2 + 8x2 = 256px */
+/* Висота блоку = 100 + 20x2 + 8x2 = 156px */
+
+/* Task 4 */
+.second-box {
+  width: 200px;
+  height: 100px;
+  border: 8px solid blue;
+  background: yellow;
+}
+/* Ширина блоку = 200 + 8x2 = 216px */
+/* Висота блоку = 100 + 8x2 = 116px */
+
+/* Task 5 */
+.third-box {
+  box-sizing: content-box;
+  width: 200px;
+  border: 8px solid blue;
+  padding: 20px;
+  background: yellow;
+}
+/* Ширина блоку = 200 + 20x2 + 8x2 = 256px */
+
+/* Task 6 */
+.fourth-box {
+  box-sizing: border-box;
+  width: 200px;
+  border: 8px solid blue;
+  padding: 20px;
+  background: yellow;
+}
+/* Ширина контенту блоку = 200 - 20x2 - 8x2 = 144px */
+
+/* Task 7 */
+.container > div {
+  border: 10px dotted black;
+  padding: 15px;
+  background: lightblue;
+}
+
+#example1 {
+  background-clip: border-box;
+}
+
+#example2 {
+  background-clip: padding-box;
+}
+
+#example3 {
+  background-clip: content-box;
+}
+
+/* Task 8 */
+h1 {
+  display: inline-block;
+  width: min-content;
+}

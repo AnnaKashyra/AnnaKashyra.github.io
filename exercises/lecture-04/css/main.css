@@ -190,7 +190,7 @@ div ~ p {
 .translucent-box {
   width: 100px;
   height: 100px;
-  background-color: hsl(0, 100%, 50%);
+  background-color: hsl(0 100% 50%);
 }
 
 /* Task 7 */
