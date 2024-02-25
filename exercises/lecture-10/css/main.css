@@ -1,0 +1,45 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Task 1 */
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 700px;
+  margin-bottom: 2rem;
+}
+
+.item {
+  color: white;
+  width: 100px;
+  padding: 1rem;
+  text-align: center;
+  /* flex: 0 1 auto;
+  width: calc(100% / 3); */
+}
+
+.item-blue {
+  background-color: blue;
+  flex-grow: 3;
+}
+.item-orange {
+  background-color:orange;  
+}
+.item-green {
+  background-color:green;
+  flex-grow: 1;
+}
+/* Ширина батьківського елементу 700px, кожного з дочірніх по 100px
+Доступна ширина = 700-(100*3) = 400px
+При розширенні елементів ця ширина розподілиться між елементами blue та green у співвідношенні 3:1, тобто:
+ширина blue = 100px + 300px = 400px
+ширина green = 100px + 100px = 200px
+
+або
+blue width = ( (flex-grow / total flex-grow) * available space) + initial item width =
+( (3 / 4) * 400px) + 100px = 400px
+green width = ( (1 / 4) * 400px) + 100px = 200px
+

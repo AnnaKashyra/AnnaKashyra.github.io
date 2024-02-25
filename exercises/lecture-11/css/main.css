@@ -1,0 +1,118 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+main div:nth-of-type(1) {
+	background-color: #c9316b;
+}
+main div:nth-of-type(2) {
+	background-color: #c9319e;
+	grid-column: 2;
+}
+main div:nth-of-type(3) {
+	background-color: #c231c9;
+}
+main div:nth-of-type(4) {
+	background-color: #8f31c9;
+}
+main div:nth-of-type(5) {
+	background-color: #5c31c9;
+}
+main div:nth-of-type(6) {
+	background-color: #3138c9;
+}
+main div:nth-of-type(7) {
+	background-color: #316bc9;
+}
+main div:nth-of-type(8) {
+	background-color: #319ec9;
+}
+main div:nth-of-type(9) {
+	background-color: #31c9c2;
+}
+main div:nth-of-type(10) {
+	background-color: #31c98f;
+}
+main div:nth-of-type(11) {
+	background-color: #31c95c;
+}
+main div:nth-of-type(12) {
+	background-color: #2eae27;
+}
+main div:nth-of-type(13) {
+	background-color: #c231c9;
+}
+
+main {
+	margin: 2vw 0;
+  display: grid;
+
+  /* Task 1 */
+  /* grid-template-columns: 15% 60% 25%; */
+
+  /* Task 2 */
+  /* grid-template-rows: 95px 1fr 70px; */
+
+  /* Task 3 */
+  /* grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 90px 300px 1fr; */
+
+  /* Task 4 */
+  /* grid-template-columns: repeat(4, 50px);
+  justify-content: center; */
+
+  /* Task 5 */
+  /* grid-template-columns: repeat(4, 50px);
+  justify-content: end; */
+
+  /* Task 6 */
+  /* grid-template-columns: repeat(4, 50px);
+  justify-content: space-between; */
+
+  /* Task 7 */
+  /* grid-template-columns: repeat(4, 50px);
+  justify-content: space-around; */
+
+  /* Task 8 */
+  /* grid-template-columns: repeat(4, 50px);
+  justify-content: space-evenly; */
+
+  /* Task 9 */
+  /* grid-template-columns: 1fr 1fr;
+  justify-items: stretch;
+  align-items: stretch; */
+
+  /* Task 10 */
+  /* grid-template-columns: 1fr 1fr;
+  justify-items: start; */
+
+  /* Task 11 */
+  /* grid-template-columns: 1fr 1fr;
+  justify-items: center; */
+
+  /* Task 12 */
+  /* grid-template-columns: 1fr 1fr;
+  gap: 1% 0;*/
+
+  /* або
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(7, 70px);
+  min-height: 700px;
+  align-content: space-between; */
+
+  /* Task 13 */
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(7, 70px);
+  min-height: 700px;
+  align-content: space-evenly;
+
+  /* Властивість  align-content приміняється, якщо висота контейнера більша за висоту рядків*/
+  
+}
+
+main div {
+	color: #fff;
+	padding: 5vh;
+}
