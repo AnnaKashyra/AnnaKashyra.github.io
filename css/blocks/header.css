@@ -1,0 +1,55 @@
+.header {
+}
+.header__top {
+  background-color: var(--element-bg-color);
+  color: var(--element-text-color);
+}
+.top-header {
+}
+.top-header__menu {
+}
+.menu {
+}
+.menu__icon {
+}
+.icon-menu {
+}
+.menu__body,
+.menu__list,
+.contact__list {
+  display: flex;
+  justify-content: space-between;
+}
+.menu__list {
+  max-width: 60%;
+}
+.menu__item {
+  display: inline-block;
+  margin-right: 1.5rem;
+}
+
+.menu__item a,
+.contact__item a{
+  line-height: 3;
+  text-transform: uppercase;
+  color: var(--element-text-color);
+}
+
+.menu__item a:hover,
+.contact__item a:hover{
+  color: var(--active-color);
+}
+
+.contact__list {
+  max-width: 35%;
+}
+.contact__item {
+  display: inline-block;
+  margin-left: 1.5rem;
+}
+.fa-brands {
+}
+.fa-facebook {
+}
+.fa-instagram {
+}

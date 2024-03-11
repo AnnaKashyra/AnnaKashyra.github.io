@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Javascript</title>
+		<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+	</head>
+	<body>
+		<h1>Hello, javascript!</h1>
+
+		<script>
+			// Task 1
+			// let x = 3;
+			// let y = 4;
+
+			// x == 3       // true
+			// x === "3"    // false
+			// x!=5         // true
+			// x!== "5"     // true
+			// x!== 3       // false
+			// y > 5        // false
+			// y >= 3       // true
+			// y < 5        // true
+			// y <= 2       // false
+			// 1 == true    // true
+			// null == undefined   // true
+			// NaN == NaN   // false
+
+			// Task 2
+			// let x = 3;
+			// let y = 4;
+			// let z = 5;
+
+			// x ||= y;        // 4
+			// x || (y = z);   // 4
+			// x &&= y;        // 5
+			// x && (y = z);   // 5
+			// x ??= y;        // 4
+			// x ?? (y = z);   // 4
+
+			// Task 3
+			// let num = +prompt("Enter a number");
+			// if (num === 3) {
+			//   alert("Congratulations, You did it!")
+			// } else if (num < 3) {
+			//   alert("The number is small")
+			// } else if (num > 3) {
+			//   alert("The number is too big")
+			// } else {
+			//   alert("You entered not a number")
+			// }
+
+			// Task 4
+			// let day = prompt("Введіть назву дня тижня");
+			// if (day.toLowerCase() == 'понеділок' || day.toLowerCase() == 'monday') {
+			//   alert("Start of the work week!")
+			// } else if (day.toLowerCase() == 'п"ятниця' || day.toLowerCase() == 'friday') {
+			//   alert("End of the work week!")
+			// } else {
+			//   alert("A regular day")
+			// }
+
+			// let day = prompt("Введіть назву дня тижня");
+			// switch (day.toLowerCase()) {
+			//   case 'понеділок' :
+			// 		alert("Start of the work week!");
+			// 		break;
+			//   case 'monday' :
+			// 		alert("Start of the work week!");
+			// 		break;
+			// 	case 'п"ятниця' :
+			// 		alert("End of the work week!");
+			// 		break;
+			//   case 'friday' :
+			// 		alert("End of the work week!");
+			// 		break;
+			// 	default:
+			// 		alert("A regular day");
+			// }
+
+			// Task 5
+			let score = +prompt("Examination score");
+			let grade;
+
+			// if (score <= 50) {
+			//   grade = 'F';
+			//   alert(`Your grade is ${grade}`)
+			// } else if (score <= 70) {
+			//   grade = 'D';
+			//   alert(`Your grade is ${grade}`)
+			// } else if (score <= 80) {
+			//   grade = 'C';
+			//   alert(`Your grade is ${grade}`)
+			// } else if (score <= 90) {
+			//   grade = 'B';
+			//   alert(`Your grade is ${grade}`)
+			// } else {
+			//   grade = 'A';
+			//   alert(`Your grade is ${grade}`)
+			// }
+
+			score <= 50
+				? ((grade = "F"), alert(`Your grade is ${grade}`))
+				: score <= 70
+				? ((grade = "D"), alert(`Your grade is ${grade}`))
+				: score <= 80
+				? ((grade = "C"), alert(`Your grade is ${grade}`))
+				: score <= 90
+				? ((grade = "B"), alert(`Your grade is ${grade}`))
+				: ((grade = "A"), alert(`Your grade is ${grade}`));
+
+			// Task 6
+			let firstName = null;
+			let lastName = undefined;
+			let username = (firstName || lastName) ?? "Guest";
+
+			console.log(username); // "Guest"
+		</script>
+	</body>
+</html>
