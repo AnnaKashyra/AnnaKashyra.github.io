@@ -7,7 +7,7 @@ console.log(fruitsArray);
 
 // Task 2
 for (let i = 0; i < fruitsArray.length; i++) {
-	console.log(fruitsArray[i]);
+  console.log(fruitsArray[i]);
 }
 
 // Task 3
@@ -20,22 +20,22 @@ for (let i = 0; i < fruitsArray.length; i++) {
 // Task 4
 let i = 0;
 do {
-	console.log(fruitsArray[i]);
-	i++;
+  console.log(fruitsArray[i]);
+  i++;
 } while (i < fruitsArray.length);
 
 // Task5
 for (let fruit of fruitsArray) {
-	console.log(fruit);
+  console.log(fruit);
 }
 
 // Task 6
 const Numbs = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 for (let i = 0; i < Numbs.length; i++) {
-	if (Numbs[i] % 2 === 0) {
-		console.log(Numbs[i]);
-	}
+  if (Numbs[i] % 2 === 0) {
+    console.log(Numbs[i]);
+  }
 }
 
 // Task 7
