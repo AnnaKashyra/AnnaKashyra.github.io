@@ -1,0 +1,21 @@
+.shops,
+.maps,
+.sotial {
+  margin-bottom: 4rem;
+}
+
+.maps__shop-map {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.maps__shop-item {
+  width: 30%;
+}
+
+.maps__shop-text {
+  font-size: 1rem;
+  line-height: 150%;
+  margin-bottom: 1rem;
+}

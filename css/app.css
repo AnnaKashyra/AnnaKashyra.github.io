@@ -1,5 +1,4 @@
-
-.container{
+.container {
   width: 100%;
   max-width: 82.5rem;
   margin: 0 auto;
@@ -15,5 +14,31 @@
 }
 
 .active {
-  font-weight: 600;
+  color: var(--active-color);
+}
+
+.section__title {
+  margin: 0 auto 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--element-bg-color);
+}
+
+.common__button {
+  text-align: center;
+}
+
+.common__btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: var(--element-bg-color);
+  border-radius: 0.5rem;
+  color: var(--element-text-color);
+  text-transform: uppercase;
+  transition: background-color 0.2s linear, color 0.2s linear;
+}
+
+.common__btn:hover {
+  background-color: var(--active-color);
+  color: var(--element-text-color);
 }

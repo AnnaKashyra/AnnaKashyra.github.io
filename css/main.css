@@ -5,8 +5,13 @@
 @import url(/css/common.css);
 @import url(/css/app.css);
 @import url(/css/blocks/header.css);
+@import url(/css/blocks/hero.css);
+@import url(/css/blocks/categories.css);
+@import url(/css/blocks/about.css);
+@import url(/css/blocks/footer.css);
 
-
-
-
-
+/* Pages */
+@import url(/css/pages/about-page.css);
+@import url(/css/pages/delivery.css);
+@import url(/css/pages/contacts.css);
+@import url(/css/pages/faq.css);

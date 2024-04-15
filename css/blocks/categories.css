@@ -1,0 +1,30 @@
+.categories {
+  margin-bottom: 4rem;
+}
+
+.title {
+  margin: 0 auto;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.title__new,
+.title__hits,
+.title__sale {
+  text-transform: uppercase;
+  color: var(--element-bg-color);
+  transition: color 0.2s linear;
+}
+
+.title__new:hover,
+.title__hits:hover,
+.title__sale:hover {
+  color: var(--active-color);
+}
+
+hr {
+  height: 2px;
+  background-color: var(--element-bg-color);
+}

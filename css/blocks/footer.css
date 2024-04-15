@@ -1,0 +1,64 @@
+.footer a {
+  color: var(--element-text-color);
+}
+
+.footer__top {
+  padding: 2rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  text-transform: uppercase;
+}
+
+.footer__menu-item,
+.footer__catalog-item,
+.footer__contacts-item,
+.address__list,
+.address__list-title,
+.address__list-item,
+.social__list-title {
+  padding-bottom: 0.7rem;
+}
+
+.address__list-item {
+  text-transform: none;
+}
+
+.footer__contacts-item a {
+  display: inline-block;
+}
+
+.footer__contacts-item i,
+.social__list i {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.footer__menu-item a,
+.footer__catalog-item a,
+.footer__contacts-item a,
+.address__list-title a,
+.social__list a,
+.footer__bottom a {
+  transition: color 0.2s linear;
+}
+
+.footer__menu-item a:hover,
+.footer__catalog-item a:hover,
+.footer__contacts-item a:hover,
+.address__list-title a:hover,
+.social__list a:hover,
+.footer__bottom a:hover {
+  color: var(--active-color);
+}
+
+.footer__bottom {
+  background-color: #003d4e;
+  padding: 0.7rem 0;
+  text-align: center;
+}
+
+.footer__bottom-privacy:before,
+.footer__bottom-privacy:after {
+  content: "|";
+  padding: 0 2rem;
+}

@@ -1,0 +1,79 @@
+.about,
+.about__top,
+.about__bottom {
+  margin-bottom: 4rem;
+}
+
+.about__info {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about__item {
+  padding: 1rem 2rem;
+  width: 23%;
+  border: 2px solid var(--element-bg-color);
+  border-radius: 0.5rem;
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--element-bg-color);
+}
+
+.about__item-num {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 300;
+  color: var(--active-color);
+}
+
+.story {
+  margin-bottom: 2rem;
+  display: grid;
+  grid-template-areas:
+    ". first first ."
+    "second second third third";
+  gap: 2rem;
+}
+
+.first {
+  grid-area: first;
+}
+
+.second {
+  grid-area: second;
+}
+
+.third {
+  grid-area: third;
+}
+
+.story__item-title {
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  color: var(--active-color);
+  text-align: center;
+}
+
+.second .story__item-title,
+.third .story__item-title {
+  text-align: left;
+  padding-left: 6rem;
+}
+
+.story__item-text {
+  font-size: 1rem;
+  line-height: 150%;
+  padding-left: 6rem;
+}
+
+.story__item-text li {
+  list-style: disc;
+  margin-bottom: 0.5rem;
+}
+
+.first .story__item-text {
+  padding-left: 0;
+  text-align: center;
+}

@@ -1,135 +1,412 @@
 <!DOCTYPE html>
 <html lang="ua">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="icon" type="image/png" sizes="32x52" href="icon.png" />
-		<link rel="stylesheet" href="css/main.css" />
-		<title>Palmira Textile</title>
-	</head>
-	<body>
-		<header class="header">
-			<div class="header__top top-header">
-				<div class="container">
-					<div class="top-header__menu menu">
-						<!-- <button type="button" class="menu__icon icon-menu">
-							<span></span>
-						</button> -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x52" href="icon.png" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Palmira Textile</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <!-- Header__top -->
+      <div class="header__top top-header">
+        <div class="container">
+          <div class="top-header__container">
+            <div class="top-header__menu menu">
+              <nav class="menu__body">
+                <ul class="menu__list">
+                  <li class="menu__item active">
+                    <a href="index.html">Головна</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="html/about.html">Про нас</a>
+                  </li>
+                  <li class="menu__item"><a href="html/blog.html">Блог</a></li>
+                  <li class="menu__item">
+                    <a href="html/delivery.html">Оплата і доставка</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="html/delivery.html">Поширені питання</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="html/responses.html">Відгуки</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="html/catalog.html">Акції</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
 
-						<nav class="menu__body">
-							<ul class="menu__list">
-                <li class="menu__item active"><a href="index.html">Головна</a></li>
-								<li class="menu__item"><a href="about.html">Про нас</a></li>
-								<li class="menu__item"><a href="#">Блог</a></li>
-								<li class="menu__item"><a href="#">Оплата і доставка</a></li>
-								<li class="menu__item"><a href="#">Поширені питання</a></li>
-								<li class="menu__item"><a href="#">Відгуки</a></li>
-								<li class="menu__item"><a href="#">Акції</a></li>
-							</ul>
-							<ul class="contact__list">
-								<li class="contact__item">
-									<a href="#"><i class="fa-brands fa-facebook"></i></a>
-								</li>
-								<li class="contact__item">
-									<a href="#"><i class="fa-brands fa-instagram"></i></a>
-								</li>
-                <li class="contact__item">
-									<a href="#"><i class="fa-brands fa-instagram"></i></a>
-								</li>
-                <li class="contact__item">
-									<a href="#"><i class="fa-brands fa-instagram"></i></a>
-								</li>
-								<li class="contact__item">
-									<a href="contact.html">Зв'яжіться з нами</a>
-								</li>
-							</ul>
-						</nav>
-					</div>   <!-- top-header__menu -->
-				</div>     <!-- container -->
-			</div>
+            <nav class="top-header__contacts contacts">
+              <ul class="contacts__list">
+                <li class="contacts__item">
+                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </li>
+                <li class="contacts__item">
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li class="contacts__item">
+                  <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </li>
+                <li class="contacts__item">
+                  <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                </li>
+                <li class="contacts__item contacts__btn">
+                  <a href="html/contacts.html">Зв'яжіться з нами</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- top-header__container -->
+        </div>
+        <!-- container -->
+      </div>
 
-			<div class="header__catalog">
-				<nav>
-					<a href="catalog.html">Всі товари</a> &nbsp;
-					<a href="catalog.html">Жінкам</a> &nbsp;
-					<a href="catalog.html">Дівчатам</a> &nbsp;
-					<a href="catalog.html">Чоловікам</a> &nbsp;
-					<a href="catalog.html">Хлопцям</a> &nbsp;
-					<a href="catalog.html">Family Look</a> &nbsp;
-				</nav>
-				<nav>
-					<a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
-					&nbsp; <a href="#"><i class="fa-solid fa-heart"></i></a> &nbsp;
-					<a href="#!"><i class="fa-solid fa-user"></i></a>
-				</nav>
-			</div>
-		</header>
+      <!-- Header__body -->
+      <div class="header__body body-header">
+        <div class="container">
+          <div class="body-header__container">
+            <div class="body-header__contacts">
+              <a href="tel:+380962688839"
+                ><i class="fa-solid fa-phone"></i>+380 96 268 88 39</a
+              >
+              <a href="#"
+                ><i class="fa-brands fa-telegram"></i>Написати в Телеграм</a
+              >
+              <a href="#"
+                ><i class="fa-brands fa-viber"></i>Написати у Вайбер</a
+              >
+            </div>
 
-		<footer>
-			<section>
-				<div>
-					<h2>About</h2>
-					<ul>
-						<li><a href="#">Services</a></li>
-						<li><a href="#">Portfolio</a></li>
-						<li><a href="#">Pricing</a></li>
-						<li><a href="#">Customers</a></li>
-						<li><a href="#">Careers</a></li>
-					</ul>
-				</div>
+            <div class="body-header__brand brand">
+              <a href="#" class="brand__logo">
+                <img src="images/logo.svg" alt="Логотип Palmira Textile" />
+                <p class="brand__title">
+                  Оптовий Постачальник Тканин №1 в Україні
+                </p>
+              </a>
+            </div>
 
-				<div>
-					<h2>Resources</h2>
-					<ul>
-						<li><a href="#">Docs</a></li>
-						<li><a href="#">Blog</a></li>
-						<li><a href="#">eBooks</a></li>
-						<li><a href="#">Webinars</a></li>
-					</ul>
-				</div>
+            <div class="body-header__toolbar toolbar">
+              <form action="#" class="toolbar__search">
+                <button type="submit" class="toolbar__search-button">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <input
+                  class="toolbar__search-input"
+                  type="text"
+                  autocomplete="off"
+                  name="search"
+                  placeholder="Пошук"
+                />
+              </form>
 
-				<div>
-					<h2>Contact</h2>
-					<ul>
-						<li><a href="#">Help</a></li>
-						<li><a href="#">Sales</a></li>
-						<li><a href="#">Advertise</a></li>
-						<a href="exercises/index.html">Exercises</a>
-						&nbsp;
-					</ul>
-				</div>
-			</section>
+              <nav class="toolbar__account">
+                <ul class="toolbar__list">
+                  <li class="toolbar__item">
+                    <a href="#"><i class="fa-solid fa-heart"></i></a>
+                  </li>
+                  <li class="toolbar__item">
+                    <a href="/html/cart.html"
+                      ><i class="fa-solid fa-cart-shopping"></i
+                    ></a>
+                  </li>
+                  <li class="toolbar__item">
+                    <a href="#!"
+                      ><i class="fa-solid fa-user"></i>Особистий кабінет</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
 
-			<section class="footer-social">
-				<ul class="list-unstyled">
-					<li>
-						<a href="#"><i class="fa-brands fa-facebook"></i></a>
-					</li>
-					<li>
-						<a href="#"><i class="fa-brands fa-twitter"></i></a>
-					</li>
-					<li>
-						<a href="#"><i class="fa-brands fa-github"></i></a>
-					</li>
-					<li>
-						<a href="#"><i class="fa-brands fa-linkedin"></i></a>
-					</li>
-					<li>
-						<a href="#"><i class="fa-brands fa-youtube"></i></a>
-					</li>
-					<li>
-						<a href="#"><i class="fa-brands fa-instagram"></i></a>
-					</li>
-				</ul>
-			</section>
+          <button type="button" class="burger__menu">
+            <span></span>
+          </button>
+        </div>
+        <!-- container -->
+      </div>
 
-			<section>
-				<ul>
-					<li><a href="#">Terms &amp; Conditions</a></li>
-					<li><a href="#">Privacy Policy</a></li>
-					<li>&copy; 2024 All rights reserve</li>
-				</ul>
-			</section>
-		</footer>
-	</body>
+      <!-- Header__catalog -->
+      <div class="header__catalog catalog-header">
+        <div class="container">
+          <nav class="catalog-header__menu menu">
+            <li class="menu__catalog"><a href="catalog.html">Всі товари</a></li>
+            <li class="menu__catalog">
+              <a href="catalog.html">Тканини за призначенням</a>
+            </li>
+            <li class="menu__catalog"><a href="catalog.html">Новинки</a></li>
+            <li class="menu__catalog">
+              <a href="catalog.html">Хіти продаж</a>
+            </li>
+            <li class="menu__catalog"><a href="catalog.html">Розпродаж</a></li>
+            <li class="menu__catalog">
+              <a href="catalog.html">Оптовим покупцям</a>
+            </li>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero">
+        <h1 class="hero__title">
+          Тканини оптом і дрібним оптом за кращими цінами!
+        </h1>
+
+        <div class="hero__slider slider-hero">
+          <div class="slider-hero__img">
+            <img src="images/Hero/slider_1.jpg" alt="Весняні тканини" />
+          </div>
+          <a href="html/catalog.html"
+            ><h2 class="slider-hero__title">
+              Нова колекція весна-літо 2024
+            </h2></a
+          >
+          <a href="html/catalog.html" class="slider-hero__btn"
+            >Перейти до каталогу</a
+          >
+        </div>
+      </section>
+
+      <!-- Categories -->
+      <section class="categories">
+        <div class="container">
+          <div class="categories__title title">
+            <a href="html/catalog.html"><h2 class="title__new">Новинки</h2></a>
+            <a href="html/catalog.html"
+              ><h2 class="title__hits">Хіти продаж</h2></a
+            >
+            <a href="html/catalog.html"
+              ><h2 class="title__sale">Розпродаж</h2></a
+            >
+          </div>
+
+          <hr />
+
+          <!-- Products -->
+          <div class="product__container">
+            <article class="product">
+              <div class="product__icons">
+                <a href="" class="fas fa-shopping-cart"></a>
+                <a href="" class="fas fa-heart"></a>
+                <a href="" class="fas fa-eye"></a>
+              </div>
+
+              <div class="product__img">
+                <img src="/images/products/product_1.jpg" alt="Штапель дрібний принт маки">
+              </div>
+
+              <div class="product__content">
+                <div class="product__article">Артикул: W-5117-д.9926</div>
+                <div class="product__colors"></div>
+                <h3 class="product__name">Штапель дрібний принт маки</h3>
+                <div class="product__price">
+                  <div class="product__price-retail">123</div>
+                  <div class="product__price-wholesale">82</div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="about">
+        <div class="container">
+          <h2 class="section__title">Про нас</h2>
+
+          <div class="about__top">
+            <div class="about__info">
+              <div class="about__item">
+                <div class="about__item-num">>30</div>
+                <div class="about__item-text">років на ринку</div>
+              </div>
+              <div class="about__item">
+                <div class="about__item-num">300+</div>
+                <div class="about__item-text">нових позицій в сезон</div>
+              </div>
+              <div class="about__item">
+                <div class="about__item-num">5</div>
+                <div class="about__item-text">торгових точок</div>
+              </div>
+              <div class="about__item">
+                <div class="about__item-num">800</div>
+                <div class="about__item-text">різноманітних дизайнів</div>
+              </div>
+            </div>
+
+            <div class="common__button">
+              <a href="html/about.html" class="common__btn">Читати більше</a>
+            </div>
+          </div>
+
+          <div class="about__bottom">
+            <div class="about__story story">
+              <div class="story__item first">
+                <h3 class="story__item-title">
+                  Чому вигідно обрати «Palmira Textile»?
+                </h3>
+                <p class="story__item-text">
+                  Інтернет-магазин тканин «Palmira Textile» пропонує широкий
+                  асортимент текстилю за найкращими цінами на ринку України! Ви
+                  зможете придбати матеріали для будь-якого виробу оптом,
+                  дрібним оптом, в роздріб або за системою дропшипінгу. Купуючи
+                  тканини у нас, Ви гарантовано отримуєте не тільки модний,
+                  сучасний дизайн, але й високу якість сировини, компетентне,
+                  швидке обслуговування та як результат – неперевершений виріб!
+                </p>
+              </div>
+
+              <div class="story__item second">
+                <h3 class="story__item-title">Наші переваги</h3>
+                <ul class="story__item-text">
+                  <li>Більше 30 років на ринку текстилю України</li>
+                  <li>Нові технології бізнесу та комунікації з клієнтами</li>
+                  <li>Оригінальні дизайни тканин</li>
+                  <li>Демократична цінова політика</li>
+                  <li>Безкоштовна послуга «Надсилання зразків»</li>
+                  <li>Зручне розташування магазинів, комфортний сервіс</li>
+                </ul>
+              </div>
+
+              <div class="story__item third">
+                <h3 class="story__item-title">Наш асортимент</h3>
+                <ul class="story__item-text">
+                  <li>Широкий асортимент ткани для виробників одягу</li>
+                  <li>Дизайнерські тканини для ательє</li>
+                  <li>Оптові поставки для роздрібних магазинів тканин</li>
+                  <li>Тканини для індивідуального пошиву</li>
+                  <li>Тканини для рукодільниць</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="common__button">
+              <a href="html/catalog.html" class="common__btn"
+                >Перейти в каталог</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <section class="footer__top">
+          <nav class="footer__menu">
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a href="html/about.html">Про нас</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="html/blog.html">Блог</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="html/delivery.html">Оплата і доставка</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="html/faq.html">Поширені питання</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="html/responses.html">Відгуки</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="html/catalog.html">Акції</a>
+              </li>
+            </ul>
+          </nav>
+
+          <nav class="footer__catalog">
+            <ul class="footer__catalog-list">
+              <li class="footer__catalog-item">
+                <a href="html/catalog.html">Всі товари</a>
+              </li>
+              <li class="footer__catalog-item">
+                <a href="html/catalog.html">Тканини за призначенням</a>
+              </li>
+              <li class="footer__catalog-item">
+                <a href="html/catalog.html">Новинки</a>
+              </li>
+              <li class="footer__catalog-item">
+                <a href="html/catalog.html">Хіти продаж</a>
+              </li>
+              <li class="footer__catalog-item">
+                <a href="html/catalog.html">Розпродаж</a>
+              </li>
+              <li class="footer__catalog-item">
+                <a href="html/catalog.html">Оптовим покупцям</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="footer__contacts">
+            <ul class="footer__contacts-list">
+              <li class="footer__contacts-item">
+                <a href="html/contacts.html">Зв'яжіться з нами</a>
+              </li>
+              <li class="footer__contacts-item">
+                <a href="tel:+380962688839"
+                  ><i class="fa-solid fa-phone"></i>+380 96 268 88 39</a
+                >
+              </li>
+              <li class="footer__contacts-item">
+                <a href="#"
+                  ><i class="fa-brands fa-telegram"></i>Написати в Телеграм</a
+                >
+              </li>
+              <li class="footer__contacts-item">
+                <a href="#"
+                  ><i class="fa-brands fa-viber"></i>Написати у Вайбер</a
+                >
+              </li>
+              <li class="footer__contacts-item">
+                <a href="exercises/index.html">Exercises</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__address">
+            <div class="address__list">
+              <p class="address__list-title">
+                <a href="html/contacts.html">Наша адреса:</a>
+              </p>
+              <div class="address__list-item">
+                м. Одеса, <br />
+                ринок “7 км”, маг. №4438
+              </div>
+              <div class="address__list-item">
+                м. Хмельницький, <br />
+                вул.Геологів 11
+              </div>
+            </div>
+
+            <div class="social__list">
+              <p class="social__list-title">Ми у соцмережах</p>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+          </div>
+        </section>
+      </div>
+      <section class="footer__bottom">
+        <a href="#"
+          ><span class="footer__bottom-terms">Terms &amp; Conditions</span></a
+        >
+        <a href="#"
+          ><span class="footer__bottom-privacy">Privacy Policy</span></a
+        >
+        <span class="footer__bottom-copy">&copy; 2024 All rights reserve</span>
+      </section>
+    </footer>
+  </body>
 </html>

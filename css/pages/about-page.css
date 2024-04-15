@@ -1,0 +1,43 @@
+.about-page,
+.about-page__item {
+  margin-bottom: 4rem;
+}
+
+.about-page__container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.about-page__text,
+.about-page__img {
+  width: 42%;
+}
+
+.about-page__text p,
+.about-page__list,
+.about-page__order,
+.order__list {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 150%;
+}
+
+.about-page__list {
+  padding: 0 17rem;
+}
+
+.about-page__list li,
+.order__list li {
+  list-style: disc;
+  margin-bottom: 0.5rem;
+}
+
+.about-page__order,
+.order__list {
+  margin: 0 auto 1rem;
+  width: 80%;
+}
+
+.order__list a {
+  color: var(--active-color);
+}
