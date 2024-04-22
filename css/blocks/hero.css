@@ -10,7 +10,6 @@
   color: var(--active-color);
 }
 
-
 .slider-hero {
   position: relative;
 }
@@ -21,7 +20,7 @@
 }
 
 .slider-hero__title {
-  padding: .8rem 0;
+  padding: 0.8rem 0;
   background-color: var(--element-bg-color);
   position: absolute;
   top: 12.5rem;
@@ -31,15 +30,15 @@
   font-size: 3rem;
   text-transform: uppercase;
   text-align: center;
-  transition: background-color .1s linear, color .1s linear;
+  transition: background-color 0.1s linear, color 0.1s linear;
 }
 
-.slider-hero__title a{
+.slider-hero__title a {
   color: var(--element-text-color);
 }
 
 .fa-chevron-left,
-.fa-chevron-right{
+.fa-chevron-right {
   position: absolute;
   top: 14rem;
   z-index: 15;
@@ -47,11 +46,11 @@
   color: var(--element-text-color);
 }
 
-.fa-chevron-left{
+.fa-chevron-left {
   left: 2rem;
 }
 
-.fa-chevron-right{
+.fa-chevron-right {
   right: 2rem;
 }
 
@@ -59,7 +58,7 @@
   padding: 1rem 2rem;
   min-width: 6rem;
   background-color: var(--element-text-color);
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   position: absolute;
   top: 20rem;
   left: 50%;
@@ -67,7 +66,7 @@
   z-index: 10;
   color: var(--element-bg-color);
   text-transform: uppercase;
-  transition: background-color .1s linear, color .1s linear;
+  transition: background-color 0.1s linear, color 0.1s linear;
 }
 
 .slider-hero__title:hover,

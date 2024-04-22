@@ -14,8 +14,8 @@
 .about__item {
   padding: 1rem 2rem;
   width: 23%;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-  border-radius: .5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
   text-align: center;
   font-size: 1.2rem;
   color: var(--element-bg-color);
@@ -69,7 +69,7 @@
 
 .story__item-text li {
   list-style: disc;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .first .story__item-text {

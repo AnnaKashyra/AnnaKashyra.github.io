@@ -1,85 +1,84 @@
 /* Cart */
-#cart{
+#cart {
   margin: 0 auto var(--mb-large);
   width: 90%;
 }
 
-.table{
+.table {
   width: 100%;
   display: table;
 }
 
-.table__header{
+.table__header {
   display: table-header-group;
   background-color: var(--element-bg-color);
-  font-size: .875rem;
+  font-size: 0.875rem;
   text-transform: uppercase;
   text-align: center;
   color: var(--element-text-color);
 }
 
-.row{
+.row {
   width: 100%;
   display: table-row;
 }
 
-.table__body{
+.table__body {
   display: table-row-group;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-  border-radius: 0 0 .5rem .5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 0.5rem 0.5rem;
   text-align: center;
 }
 
-.cell{
+.cell {
   padding: 1rem;
   vertical-align: middle;
   display: table-cell;
   border-bottom: 1px solid var(--element-bg-color);
 }
 
-.row:last-child .cell{
+.row:last-child .cell {
   border-bottom: 0;
 }
 
-.cell__flex{
+.cell__flex {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
 }
 
-.cell__img{
+.cell__img {
   max-width: 12rem;
 }
 
-.cell__text{
+.cell__text {
   padding-left: 1rem;
   flex-basis: 55%;
   text-align: left;
 }
 
-.cell__name{
-  margin-bottom: .5rem;
+.cell__name {
+  margin-bottom: 0.5rem;
 }
 
-.cell__name a{
+.cell__name a {
   color: var(--primary-text-color);
 }
 
-.cell__name a:hover{
+.cell__name a:hover {
   color: var(--active-color);
 }
 
-.cell__del a{
+.cell__del a {
   color: var(--element-bg-color);
   font-size: 1.5rem;
 }
 
-.cell__del a:hover{
+.cell__del a:hover {
   color: var(--active-color);
 }
 
 /* Order */
-.order{
+.order {
   margin-bottom: var(--mb-large);
 }
-

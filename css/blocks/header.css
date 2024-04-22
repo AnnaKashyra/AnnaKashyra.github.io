@@ -9,7 +9,7 @@
   color: var(--element-text-color);
 }
 
-.fixed{
+.fixed {
   position: fixed;
   top: 0;
   left: 0;
@@ -27,7 +27,7 @@
   flex-wrap: wrap;
 }
 
-.top-header__container{
+.top-header__container {
   margin-bottom: 1rem;
 }
 
@@ -60,7 +60,7 @@
   text-transform: uppercase;
   letter-spacing: 1px;
   color: var(--element-text-color);
-  transition: color .1s linear;
+  transition: color 0.1s linear;
 }
 
 .menu__item a:hover,
@@ -104,9 +104,9 @@
 }
 
 .brand__title {
-  margin-top: .5rem;
+  margin-top: 0.5rem;
   color: var(--active-color);
-  font-size: .75rem;
+  font-size: 0.75rem;
   text-align: center;
 }
 
@@ -122,14 +122,14 @@
   display: inline-block;
   text-transform: uppercase;
   color: var(--element-bg-color);
-  transition: color .1s linear;
+  transition: color 0.1s linear;
 }
 
 .body-header__contacts i,
 .toolbar__item i {
   display: inline-block;
   margin-right: 1rem;
-  transition: color .1s linear;
+  transition: color 0.1s linear;
 }
 
 .body-header__contacts a:hover,
@@ -155,12 +155,12 @@
 
 .toolbar__search-input {
   width: 100%;
-  padding: .7rem 3rem;
-  box-shadow: 0 5px 30px rgba(0,0,0,0.2);
+  padding: 0.7rem 3rem;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
   background-color: var(--primery-bg-color);
-  border: 1px solid #fffefc;  
+  border: 1px solid #fffefc;
   /* border: 2px solid var(--element-bg-color); */
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   color: var(--primary-text-color);
 }
 
@@ -169,11 +169,11 @@
   outline: 0;
 }
 
-.toolbar__search-input::placeholder{
+.toolbar__search-input::placeholder {
   color: var(--element-bg-color);
 }
 
-.toolbar__search-input:focus::placeholder{
+.toolbar__search-input:focus::placeholder {
   opacity: 0;
 }
 
@@ -187,14 +187,15 @@
   display: inline-block;
   text-transform: uppercase;
   color: var(--element-bg-color);
-  transition: color .1s linear;
+  transition: color 0.1s linear;
 }
 
 .toolbar__item a:hover {
   color: var(--active-color);
 }
 
-.fa-solid, .fa-brands{
+.fa-solid,
+.fa-brands {
   font-size: 1rem;
 }
 
@@ -212,12 +213,10 @@
 .burger__menu:before,
 .burger__menu:after {
   content: "";
-  transition: all .1s ease 0s;
+  transition: all 0.1s ease 0s;
   position: absolute;
   left: 0px;
   width: 100%;
   height: 3px;
   background-color: var(--element-bg-color);
 }
-
-

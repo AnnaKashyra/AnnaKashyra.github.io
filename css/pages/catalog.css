@@ -1,40 +1,40 @@
-.choice{
+.choice {
   margin-bottom: var(--mb-small);
   display: flex;
   justify-content: space-between;
 }
 
-.filtres__button{
+.filtres__button {
   padding: 1rem 2rem;
   background-color: var(--element-bg-color);
   border-radius: 0.5rem;
-  font-size: .875rem;
+  font-size: 0.875rem;
   color: var(--element-text-color);
   text-transform: uppercase;
-  transition: background-color .1s linear, color .1s linear;
+  transition: background-color 0.1s linear, color 0.1s linear;
   cursor: pointer;
 }
 
-.filtres__button:hover{
+.filtres__button:hover {
   background-color: var(--active-color);
   color: var(--element-text-color);
 }
 
-.sort{
+.sort {
   display: flex;
   align-items: baseline;
   gap: 2rem;
 }
-.sort p{
-  margin-bottom: .5rem;
+.sort p {
+  margin-bottom: 0.5rem;
 }
 
-.sort__select{
-  padding: .5rem;
+.sort__select {
+  padding: 0.5rem;
   background-color: var(--primery-bg-color);
 }
 
-.sort__select:focus{
+.sort__select:focus {
   outline: 0;
   border: 2px solid var(--element-bg-color);
 }

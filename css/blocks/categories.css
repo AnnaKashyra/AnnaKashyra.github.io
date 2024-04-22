@@ -15,7 +15,7 @@
 .title__sale {
   text-transform: uppercase;
   color: var(--element-bg-color);
-  transition: color .1s linear;
+  transition: color 0.1s linear;
 }
 
 .title__new:hover,

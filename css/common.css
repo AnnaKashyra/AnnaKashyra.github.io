@@ -27,7 +27,7 @@
   --mobile: 570px;
   --small-mobile: 400px;
 
-  --currency-symbol: "\20B4"
+  --currency-symbol: "\20B4";
 }
 
 body {
@@ -37,23 +37,23 @@ body {
   font-size: var(--primary-font-size);
 }
 
-.wrapper{
+.wrapper {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   /* overflow-x: hidden; */
 }
 
-header{
-  font-size: .875rem;
+header {
+  font-size: 0.875rem;
 }
 
-main{
+main {
   flex: 1 1 auto;
 }
 
 footer {
-  font-size: .875rem;
+  font-size: 0.875rem;
   color: var(--element-text-color);
   background-color: var(--element-bg-color);
 }

@@ -22,7 +22,7 @@
   display: block;
   position: relative;
   padding: 1rem 3rem;
-  border-radius: .5rem 0 0 0;
+  border-radius: 0.5rem 0 0 0;
   background: var(--element-bg-color);
   color: var(--element-text-color);
   font-size: 0.875rem;
@@ -40,8 +40,8 @@
   padding: 1.5rem;
   position: relative;
   z-index: 20;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-  border-radius: 0 0 .5rem .5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 0.5rem 0.5rem;
 }
 
 .tabs__panel {
@@ -50,40 +50,40 @@
 }
 
 .tabs__panel .section__title,
-.tabs__panel a{
+.tabs__panel a {
   text-transform: none;
 }
 
-.tabs__panel p{
+.tabs__panel p {
   margin-bottom: var(--mb-small);
 }
 
-.tabs__panel a{
+.tabs__panel a {
   display: inline-block;
   text-transform: uppercase;
   color: var(--element-bg-color);
-  transition: color .1s linear;
+  transition: color 0.1s linear;
 }
 
-.tabs__panel a:hover{
+.tabs__panel a:hover {
   color: var(--active-color);
 }
 
-.tabs__panel i{
+.tabs__panel i {
   margin-right: 1rem;
 }
 
-.tabs__panel span{
+.tabs__panel span {
   margin-left: 1rem;
 }
 
-.tabs__panel-list li{
+.tabs__panel-list li {
   margin-bottom: 0.5rem;
 }
 
-.subtitle{
+.subtitle {
   display: block;
-  margin-bottom: .7rem;
+  margin-bottom: 0.7rem;
 }
 
 .tabs__panel.is__active {
@@ -108,41 +108,41 @@
 }
 
 /* Sotial */
-.sotial__container{
+.sotial__container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   row-gap: 2rem;
 }
 
-.sotial__item{
+.sotial__item {
   padding: 1rem;
   width: 23%;
-  border-radius: .5rem;
-  transition: box-shadow .1s linear; 
+  border-radius: 0.5rem;
+  transition: box-shadow 0.1s linear;
 }
 
-.sotial__item:hover{
-  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+.sotial__item:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
-.sotial__item:hover a{
+.sotial__item:hover a {
   color: var(--active-color);
 }
 
-.sotial__item-logo{
+.sotial__item-logo {
   width: 30%;
   position: relative;
 }
 
-.sotial__item-logo a{
+.sotial__item-logo a {
   color: var(--element-bg-color);
 }
 
 .sotial__item-logo .fa-facebook,
 .sotial__item-logo .fa-instagram,
 .sotial__item-logo .fa-youtube,
-.sotial__item-logo .fa-tiktok{
+.sotial__item-logo .fa-tiktok {
   position: absolute;
   display: block;
   font-size: 3rem;
@@ -151,14 +151,13 @@
 .sotial__item-logo .fa-facebook,
 .sotial__item-logo .fa-instagram,
 .sotial__item-logo .fa-youtube,
-.sotial__item-logo .fa-tiktok{
+.sotial__item-logo .fa-tiktok {
   top: 1rem;
   left: 1rem;
   z-index: 10;
 }
 
 /* Mail */
-.mail{
+.mail {
   margin-bottom: var(--mb-large);
 }
-
