@@ -1,0 +1,120 @@
+.product__container{
+  margin-bottom: var(--mb-large);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 2.5rem 2rem;
+}
+
+.product{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product:hover{
+  outline: 1rem solid #fffefc;
+  box-shadow: 0 10px 30px #363636;
+  border-radius: .05rem;
+}
+
+.product__img{
+  margin-bottom: .7rem;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.product__img img{
+  object-fit: cover;
+  transition: .3s linear;
+}
+
+.badge {
+  padding: 1.3rem 1rem;
+  display: inline-block;
+  
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: baseline;
+  font-size: .75rem;
+  color: var(--element-text-color); 
+  position: absolute;
+  top: .5rem;
+  right: .5rem;
+  z-index: 10;
+}
+
+.badge__new{
+  background-color: var(--element-bg-color);
+}
+
+.badge__sale{
+  background-color: var(--active-color);
+}
+
+.product__icons{
+  display: none;
+  padding: 1.5rem .8rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: var(--primary-bg-color);
+}
+
+.product__icons .fas{
+  color: var(--element-bg-color);
+}
+
+.product__icons .fas:hover{
+  color: var(--active-color);
+}
+
+.product__content{
+  flex-basis: 30%;
+}
+
+.product__article,
+.product__name{
+  margin-bottom: .7rem;
+}
+
+.product__name a{
+  color: var(--primary-text-color);
+}
+
+.product__name a:hover{
+  color: var(--active-color);
+}
+
+.product__buy{
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.product__price-retail{
+  margin-bottom: .8rem;
+  font-size: 1.2rem;
+  color: var(--active-color);
+}
+
+.product__price-retail:after,
+.product__price-wholesale:after{
+  content: var(--currency-symbol);
+  padding-left: .5rem;  
+}
+
+.product__price-retail:after{
+  color: var(--active-color);
+}
+
+.product:hover .product__icons{
+  display: flex;
+}
+
+.product:hover img{
+  transform: scale(1.3);  
+}

@@ -3,408 +3,429 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" sizes="32x52" href="icon.png" />
+    <link rel="icon" type="image/png" sizes="32x52" href="/icon.png" />
     <link rel="stylesheet" href="/css/main.css" />
     <title>Palmira Textile - Оплата/доставка</title>
   </head>
   <body>
-    <header class="header">
-      <!-- Header__top -->
-      <div class="header__top top-header">
-        <div class="container">
-          <div class="top-header__container">
-            <div class="top-header__menu menu">
-              <nav class="menu__body">
-                <ul class="menu__list">
-                  <li class="menu__item">
-                    <a href="/index.html">Головна</a>
-                  </li>
-                  <li class="menu__item">
-                    <a href="/html/about.html">Про нас</a>
-                  </li>
-                  <li class="menu__item"><a href="/html/blog.html">Блог</a></li>
-                  <li class="menu__item active">
-                    <a href="/html/delivery.html">Оплата і доставка</a>
-                  </li>
-                  <li class="menu__item">
-                    <a href="/html/faq.html">Поширені питання</a>
-                  </li>
-                  <li class="menu__item">
-                    <a href="/html/responses.html">Відгуки</a>
-                  </li>
-                  <li class="menu__item">
-                    <a href="/html/catalog.html">Акції</a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-
-            <nav class="top-header__contacts contacts">
-              <ul class="contacts__list">
-                <li class="contacts__item">
-                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                </li>
-                <li class="contacts__item">
-                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                </li>
-                <li class="contacts__item">
-                  <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                </li>
-                <li class="contacts__item">
-                  <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-                </li>
-                <li class="contacts__item contacts__btn">
-                  <a href="/html/contacts.html">Зв'яжіться з нами</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <!-- top-header__container -->
-        </div>
-        <!-- container -->
-      </div>
-
-      <!-- Header__body -->
-      <div class="header__body body-header">
-        <div class="container">
-          <div class="body-header__container">
-            <div class="body-header__contacts">
-              <a href="tel:+380962688839"
-                ><i class="fa-solid fa-phone"></i>+380 96 268 88 39</a
-              >
-              <a href="#"
-                ><i class="fa-brands fa-telegram"></i>Написати в Телеграм</a
-              >
-              <a href="#"
-                ><i class="fa-brands fa-viber"></i>Написати у Вайбер</a
-              >
-            </div>
-
-            <div class="body-header__brand brand">
-              <a href="#" class="brand__logo">
-                <img src="/images/logo.svg" alt="Logo-icon" />
-                <p class="brand__title">
-                  Оптовий Постачальник Тканин №1 в Україні
-                </p>
-              </a>
-            </div>
-
-            <div class="body-header__toolbar toolbar">
-              <form action="#" class="toolbar__search">
-                <button type="submit" class="toolbar__search-button">
-                  <i class="fa-solid fa-magnifying-glass"></i>
-                </button>
-                <input
-                  class="toolbar__search-input"
-                  type="text"
-                  autocomplete="off"
-                  name="search"
-                  placeholder="Пошук"
-                />
-              </form>
-
-              <nav class="toolbar__account">
-                <ul class="toolbar__list">
-                  <li class="toolbar__item">
-                    <a href="#"><i class="fa-solid fa-heart"></i></a>
-                  </li>
-                  <li class="toolbar__item">
-                    <a href="/html/cart.html"
-                      ><i class="fa-solid fa-cart-shopping"></i
-                    ></a>
-                  </li>
-                  <li class="toolbar__item">
-                    <a href="#!"
-                      ><i class="fa-solid fa-user"></i>Особистий кабінет</a
-                    >
-                  </li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-
-          <button type="button" class="burger__menu">
-            <span></span>
-          </button>
-        </div>
-        <!-- container -->
-      </div>
-
-      <!-- Header__catalog -->
-      <div class="header__catalog catalog-header">
-        <div class="container">
-          <nav class="catalog-header__menu menu">
-            <li class="menu__catalog">
-              <a href="/html/catalog.html">Всі товари</a>
-            </li>
-            <li class="menu__catalog">
-              <a href="catalog.html">Тканини за призначенням</a>
-            </li>
-            <li class="menu__catalog">
-              <a href="/html/catalog.html">Новинки</a>
-            </li>
-            <li class="menu__catalog">
-              <a href="catalog.html">Хіти продаж</a>
-            </li>
-            <li class="menu__catalog">
-              <a href="/html/catalog.html">Розпродаж</a>
-            </li>
-            <li class="menu__catalog">
-              <a href="/html/catalog.html">Оптовим покупцям</a>
-            </li>
-          </nav>
-        </div>
-      </div>
-    </header>
-
-    <main>
-      <section class="payment">
-        <div class="container">
-          <h1 class="hero__title">
-            Інформація про оплату замовлень та доставку
-          </h1>
-
-          <div class="delivery__item">
-            <h2 class="section__title">Способи оплати</h2>
-            <p class="delivery__text">
-              <strong
-                >Ви можете здійснити оплату одним із таких способів:</strong
-              >
-            </p>
-            <ul class="delivery__list">
-              <li>Оплата готівкою безпосередньо у наших торгових точках</li>
-              <li>Оплата на розрахунковий рахунок</li>
-            </ul>
-            <p class="delivery__text">
-              Вci банківські комісії спачує клієнт. Розрахунок тільки по
-              передоплаті.
-            </p>
-            <ul class="delivery__list">
-              <li>Безготівковий розрахунок із наданням офіційних документів</li>
-            </ul>
-            <p class="delivery__text">
-              <strong
-                >Для проведення платежу на безготівковий рахунок з наданням
-                офіційних документів необхідно подати:</strong
-              >
-            </p>
-            <ol class="delivery__list-order">
-              <li>ПІБ фізособи або повне найменування юрособи</li>
-              <li>Номер телефону</li>
-              <li>Код ЄДРПОУ</li>
-              <li>Розрахунковий рахунок у банку</li>
-              <li>Код банку</li>
-              <li>Фізична адреса офісу/цеху/магазину/приміщення (бажано)</li>
-            </ol>
-            <ul class="delivery__list">
-              <li>Надсилання грошей за допомогою посередників</li>
-            </ul>
-            <p class="delivery__text">
-              Ви можете скористатися послугами перевізників для передачі коштів.
-              В цьому випадку необхідно передати контакти перевізника нашому
-              менеджеру.
-            </p>
-            <p class="delivery__text">
-              Після оформлення замовлення найближчим часом з Вами зв'яжеться наш
-              менеджер для його підтвердження та уточнення деталей. Оплату
-              замовлення необхідно здійснити не пізніше ніж протягом 2 днів. По
-              закінченню цього терміну бронь із замовлення автоматично
-              знімається.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section class="delivery">
-        <div class="container">
-          <div class="delivery__item">
-            <h2 class="section__title">Доставка по Україні</h2>
-            <p class="delivery__text">
-              Ми здійснюємо доставку по Україні такими способами:
-            </p>
-            <ul class="delivery__list">
-              <li>Самовивіз безпосередньо з наших торгових точок</li>
-            </ul>
-            <ul class="delivery__list">
-              <li>Надсилання транспортними компаніями</li>
-            </ul>
-            <div class="delivery__company">
-              <a
-                class="delivery__company-logo"
-                href="https://novaposhta.ua/"
-                target="_blank"
-                ><img src="/images/delivery/nova–poshta.png" alt="Нова пошта"
-              /></a>
-              <a
-                class="delivery__company-logo"
-                href="https://www.ukrposhta.ua/ua"
-                target="_blank"
-                ><img src="/images/delivery/ukrposhta.png" alt="Укрпошта"
-              /></a>
-              <a
-                class="delivery__company-logo"
-                href="https://gunsel.ua/"
-                target="_blank"
-                ><img src="/images/delivery/gunsel.jpeg" alt="Гюнсел"
-              /></a>
-              <a
-                class="delivery__company-logo"
-                href="https://www.delivery-auto.com/ru-RU/Home/Index"
-                target="_blank"
-                ><img src="/images/delivery/delivery.png" alt="Делівері"
-              /></a>
-              <a
-                class="delivery__company-logo"
-                href="https://justin.ua/"
-                target="_blank"
-                ><img src="/images/delivery/justin.png" alt="Джастін"
-              /></a>
-              <a
-                class="delivery__company-logo"
-                href="https://autolux.ua/ua/uk"
-                target="_blank"
-                ><img src="/images/delivery/autolux.png" alt="Автолюкс"
-              /></a>
-            </div>
-            <ul class="delivery__list">
-              <li>Надсилання міжміськими автобусними перевізниками</li>
-            </ul>
-            <ul class="delivery__list">
-              <li>Адресна доставка</li>
-            </ul>
-            <p class="delivery__text">
-              Достаку за адресою покупця здійснюємо Укрпоштою або Новою Поштою
-              при замовленні товару у кількості не менше 10 рулонів.
-            </p>
-          </div>
-
-          <div class="delivery__item">
-            <h2 class="section__title">Доставка в Молдову</h2>
-            <ul class="delivery__list">
-              <li>Відправка перевізником "777", "888"</li>
-              <li>Відправлення вантажними автобусами "Молдова-Україна"</li>
-            </ul>
-          </div>
-
-          <div class="common__button">
-            <a href="/html/contacts.html" class="common__btn"
-              >Зв'язатися з менеджером</a
-            >
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="container">
-        <section class="footer__top">
-          <nav class="footer__menu">
-            <ul class="footer__menu-list">
-              <li class="footer__menu-item">
-                <a href="/html/about.html">Про нас</a>
-              </li>
-              <li class="footer__menu-item">
-                <a href="/html/blog.html">Блог</a>
-              </li>
-              <li class="footer__menu-item">
-                <a href="/html/delivery.html">Оплата і доставка</a>
-              </li>
-              <li class="footer__menu-item">
-                <a href="/html/faq.html">Поширені питання</a>
-              </li>
-              <li class="footer__menu-item">
-                <a href="/html/responses.html">Відгуки</a>
-              </li>
-              <li class="footer__menu-item">
-                <a href="/html/catalog.html">Акції</a>
-              </li>
-            </ul>
-          </nav>
-
-          <nav class="footer__catalog">
-            <ul class="footer__catalog-list">
-              <li class="footer__catalog-item">
-                <a href="/html/catalog.html">Всі товари</a>
-              </li>
-              <li class="footer__catalog-item">
-                <a href="/html/catalog.html">Тканини за призначенням</a>
-              </li>
-              <li class="footer__catalog-item">
-                <a href="/html/catalog.html">Новинки</a>
-              </li>
-              <li class="footer__catalog-item">
-                <a href="/html/catalog.html">Хіти продаж</a>
-              </li>
-              <li class="footer__catalog-item">
-                <a href="/html/catalog.html">Розпродаж</a>
-              </li>
-              <li class="footer__catalog-item">
-                <a href="/html/catalog.html">Оптовим покупцям</a>
-              </li>
-            </ul>
-          </nav>
-
-          <div class="footer__contacts">
-            <ul class="footer__contacts-list">
-              <li class="footer__contacts-item">
-                <a href="/html/contacts.html">Зв'яжіться з нами</a>
-              </li>
-              <li class="footer__contacts-item">
-                <a href="tel:+380962688839"
-                  ><i class="fa-solid fa-phone"></i>+380 96 268 88 39</a
-                >
-              </li>
-              <li class="footer__contacts-item">
-                <a href="#"
-                  ><i class="fa-brands fa-telegram"></i>Написати в Телеграм</a
-                >
-              </li>
-              <li class="footer__contacts-item">
-                <a href="#"
-                  ><i class="fa-brands fa-viber"></i>Написати у Вайбер</a
-                >
-              </li>
-              <li class="footer__contacts-item">
-                <a href="/exercises/index.html">Exercises</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="footer__address">
-            <div class="address__list">
-              <p class="address__list-title">
-                <a href="/html/contacts.html">Наша адреса:</a>
-              </p>
-              <div class="address__list-item">
-                м. Одеса, <br />
-                ринок “7 км”, маг. №4438
-              </div>
-              <div class="address__list-item">
-                м. Хмельницький, <br />
-                вул.Геологів 11
-              </div>
-            </div>
-
-            <div class="social__list">
-              <p class="social__list-title">Ми у соцмережах</p>
-              <a href="#"><i class="fa-brands fa-facebook"></i></a>
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
-              <a href="#"><i class="fa-brands fa-youtube"></i></a>
-              <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-            </div>
-          </div>
-        </section>
-      </div>
-
-      <section class="footer__bottom">
-        <a href="#"
-          ><span class="footer__bottom-terms">Terms &amp; Conditions</span></a
-        >
-        <a href="#"
-          ><span class="footer__bottom-privacy">Privacy Policy</span></a
-        >
-        <span class="footer__bottom-copy">&copy; 2024 All rights reserve</span>
-      </section>
-    </footer>
+   <div class="wrapper">
+     <header class="header">
+       <!-- Header__top -->
+       <div class="header__top top-header">
+         <div class="container">
+           <div class="top-header__container">
+             <div class="top-header__menu menu">
+               <nav class="menu__body">
+                 <ul class="menu__list">
+                   <li class="menu__item">
+                     <a href="/index.html">Головна</a>
+                   </li>
+                   <li class="menu__item">
+                     <a href="about.html">Про нас</a>
+                   </li>
+                   <li class="menu__item"><a href="/html/blog.html">Блог</a></li>
+                   <li class="menu__item active">
+                     <a href="delivery.html">Оплата і доставка</a>
+                   </li>
+                   <li class="menu__item">
+                     <a href="faq.html">Поширені питання</a>
+                   </li>
+                   <li class="menu__item">
+                     <a href="responses.html">Відгуки</a>
+                   </li>
+                 </ul>
+               </nav>
+             </div>
+    
+             <nav class="top-header__contacts contacts">
+               <ul class="contacts__list">
+                 <li class="contacts__item">
+                   <a href="https://www.facebook.com/PalmiraTextile/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                 </li>
+                 <li class="contacts__item">
+                   <a href="https://www.instagram.com/tkani_palmiratextile/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                 </li>
+                 <li class="contacts__item">
+                   <a href="https://www.youtube.com/@palmiratextile3853" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                 </li>
+                 <li class="contacts__item">
+                   <a href="https://vm.tiktok.com/ZMenAk5jX/" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                 </li>
+                 <li class="contacts__item contacts__btn">
+                   <a href="contacts.html">Зв'яжіться з нами</a>
+                 </li>
+               </ul>
+             </nav>
+           </div>
+           <!-- top-header__container -->
+         </div>
+         <!-- container -->
+       </div>
+    
+       <!-- Header__body -->
+       <div class="header__body body-header">
+         <div class="container">
+           <div class="body-header__container">
+             <div class="body-header__contacts">
+               <a href="tel:+380962688839"
+                 ><i class="fa-solid fa-phone"></i>+380 96 268 88 39</a
+               >
+               <a href="#"
+                 ><i class="fa-brands fa-telegram"></i>Написати в Телеграм</a
+               >
+               <a href="#"
+                 ><i class="fa-brands fa-viber"></i>Написати у Вайбер</a
+               >
+             </div>
+    
+             <div class="body-header__brand brand">
+               <a href="#" class="brand__logo">
+                 <img src="/images/logo.svg" alt="Logo-icon" />
+                 <p class="brand__title">
+                   Оптовий Постачальник Тканин №1
+                 </p>
+               </a>
+             </div>
+    
+             <div class="body-header__toolbar toolbar">
+               <form action="#" class="toolbar__search">
+                 <button type="submit" class="toolbar__search-button">
+                   <i class="fa-solid fa-magnifying-glass"></i>
+                 </button>
+                 <input
+                   class="toolbar__search-input"
+                   type="text"
+                   autocomplete="off"
+                   name="search"
+                   placeholder="Пошук"
+                 />
+               </form>
+    
+               <nav class="toolbar__account">
+                 <ul class="toolbar__list">
+                   <li class="toolbar__item">
+                     <a href="#"><i class="fa-solid fa-heart" title="Обране"></i></a>
+                   </li>
+                   <li class="toolbar__item">
+                     <a href="cart.html"
+                       ><i class="fa-solid fa-cart-shopping" title="Кошик"></i
+                     ></a>
+                   </li>
+                   <li class="toolbar__item">
+                     <a href="account.html"
+                       ><i class="fa-solid fa-user"></i>Особистий кабінет</a
+                     >
+                   </li>
+                 </ul>
+               </nav>
+             </div>
+           </div>
+    
+           <button type="button" class="burger__menu">
+             <span></span>
+           </button>
+         </div>
+         <!-- container -->
+       </div>
+    
+       <!-- Header__catalog -->
+       <div class="header__catalog catalog-header">
+         <div class="container">
+           <nav class="catalog-header__menu menu">
+             <li class="menu__catalog">
+               <a href="catalog.html">Всі товари</a>
+             </li>
+             <li class="menu__catalog">
+               <a href="catalog.html">Тканини за призначенням</a>
+             </li>
+             <li class="menu__catalog">
+               <a href="catalog.html">Новинки</a>
+             </li>
+             <li class="menu__catalog">
+               <a href="catalog.html">Хіти продаж</a>
+             </li>
+             <li class="menu__catalog">
+               <a href="catalog.html">Акції</a>
+             </li>
+             <li class="menu__catalog">
+               <a href="catalog.html">Оптовим покупцям</a>
+             </li>
+           </nav>
+         </div>
+       </div>
+     </header>
+    
+     <!-- Main -->
+     <main>
+        <!-- Paymant -->
+       <section class="payment">
+         <div class="container">
+           <h1 class="hero__title">
+             Інформація про оплату замовлень та доставку
+           </h1>
+    
+           <div class="delivery__item">
+             <h2 class="section__title">Способи оплати</h2>
+             <p class="delivery__text">
+               <strong
+                 >Ви можете здійснити оплату одним із таких способів:</strong
+               >
+             </p>
+             <ul class="delivery__list">
+               <li>Оплата готівкою безпосередньо у наших торгових точках</li>
+               <li>Оплата на розрахунковий рахунок</li>
+             </ul>
+             <p class="delivery__text">
+               Вci банківські комісії спачує клієнт. Розрахунок тільки по
+               передоплаті.
+             </p>
+             <ul class="delivery__list">
+               <li>Безготівковий розрахунок із наданням офіційних документів</li>
+             </ul>
+             <p class="delivery__text">
+               <strong
+                 >Для проведення платежу на безготівковий рахунок з наданням
+                 офіційних документів необхідно подати:</strong
+               >
+             </p>
+             <ol class="delivery__list-order">
+               <li>ПІБ фізособи або повне найменування юрособи</li>
+               <li>Номер телефону</li>
+               <li>Код ЄДРПОУ</li>
+               <li>Розрахунковий рахунок у банку</li>
+               <li>Код банку</li>
+               <li>Фізична адреса офісу/цеху/магазину/приміщення (бажано)</li>
+             </ol>
+             <ul class="delivery__list">
+               <li>Надсилання грошей за допомогою посередників</li>
+             </ul>
+             <p class="delivery__text">
+               Ви можете скористатися послугами перевізників для передачі коштів.
+               В цьому випадку необхідно передати контакти перевізника нашому
+               менеджеру.
+             </p>
+             <p class="delivery__text">
+               Після оформлення замовлення найближчим часом з Вами зв'яжеться наш
+               менеджер для його підтвердження та уточнення деталей. Оплату
+               замовлення необхідно здійснити не пізніше ніж протягом 2 днів. По
+               закінченню цього терміну бронь із замовлення автоматично
+               знімається.
+             </p>
+           </div>
+         </div>
+       </section>
+    
+       <!-- Delivery -->
+       <section class="delivery">
+         <div class="container">
+           <div class="delivery__item">
+             <h2 class="section__title">Доставка по Україні</h2>
+             <p class="delivery__text">
+               Ми здійснюємо доставку по Україні такими способами:
+             </p>
+             <ul class="delivery__list">
+               <li>Самовивіз безпосередньо з наших торгових точок</li>
+             </ul>
+             <ul class="delivery__list">
+               <li>Надсилання транспортними компаніями</li>
+             </ul>
+             <div class="delivery__company">
+               <a
+                 class="delivery__company-logo"
+                 href="https://novaposhta.ua/"
+                 target="_blank"
+                 ><img src="/images/delivery/nova–poshta.png" alt="Нова пошта"
+               /></a>
+               <a
+                 class="delivery__company-logo"
+                 href="https://www.ukrposhta.ua/ua"
+                 target="_blank"
+                 ><img src="/images/delivery/ukrposhta.png" alt="Укрпошта"
+               /></a>
+               <a
+                 class="delivery__company-logo"
+                 href="https://gunsel.ua/"
+                 target="_blank"
+                 ><img src="/images/delivery/gunsel.jpeg" alt="Гюнсел"
+               /></a>
+               <a
+                 class="delivery__company-logo"
+                 href="https://www.delivery-auto.com/ru-RU/Home/Index"
+                 target="_blank"
+                 ><img src="/images/delivery/delivery.png" alt="Делівері"
+               /></a>
+               <a
+                 class="delivery__company-logo"
+                 href="https://justin.ua/"
+                 target="_blank"
+                 ><img src="/images/delivery/justin.png" alt="Джастін"
+               /></a>
+               <a
+                 class="delivery__company-logo"
+                 href="https://autolux.ua/ua/uk"
+                 target="_blank"
+                 ><img src="/images/delivery/autolux.png" alt="Автолюкс"
+               /></a>
+             </div>
+             <ul class="delivery__list">
+               <li>Надсилання міжміськими автобусними перевізниками</li>
+             </ul>
+             <ul class="delivery__list">
+               <li>Адресна доставка</li>
+             </ul>
+             <p class="delivery__text">
+               Достаку за адресою покупця здійснюємо Укрпоштою або Новою Поштою
+               при замовленні товару у кількості не менше 10 рулонів.
+             </p>
+           </div>
+    
+           <div class="delivery__item">
+             <h2 class="section__title">Доставка в Молдову</h2>
+             <ul class="delivery__list">
+               <li>Відправка перевізником "777", "888"</li>
+               <li>Відправлення вантажними автобусами «Молдова-Україна»</li>
+             </ul>
+           </div>
+         </div>
+       </section>
+    
+       <!-- Return -->
+       <section class="return">
+         <div class="container">
+           <div class="delivery__item">
+             <h2 class="section__title">Обмін та повернення</h2>
+             <ul class="delivery__list">
+               <li>Шановні клієнти, оформлюючи замовлення на сайті, враховуйте, що тканини не підлягають обміну або поверненню (згідно з постановою Кабінету Міністрів України від 19.03.1994 №172, додаток №3). При виникненні сумнівів щодо складу, кольору чи фактури тканини, зв'яжіться з нашими менеджерами для уточнення питань.</li>
+               <li>Обмін/повернення текстилю можна здійснити при оптовій покупці (від рулону) протягом 14 днів з моменту його отримання. При цьому слід врахувати:
+                 <ul class="delivery__list-inner">
+                   <li>оптова ціна передбачає наявність нестачі. Нормою вважається нестача у 6% від вказаної довжини рулону;
+                   </li>
+                   <li>незначний брак тканини в рулоні допускається, при наявності значного браку можлива знижка чи заміна рулону;</li>
+                   <li>для обміну рулону тканини потрібно надати фото- чи відеопідтвердження значного браку чи значної недостачі;</li>
+                   <li>рулон на обмін приймається у початковому належному вигляді (змотаний і загорнутий у плівку) з фірмовими бірками «Palmira Textil», доставку клієнт здійснює за власний рахунок.</li>
+                 </ul>
+               </li>
+             </ul>
+           </div>
+    
+           <div class="common__button">
+             <a href="contacts.html" class="common__btn"
+               >Зв'язатися з менеджером</a
+             >
+           </div>
+         </div>
+       </section>
+     </main>
+    
+     <!-- Footer -->
+     <footer class="footer">
+       <div class="container">
+         <section class="footer__top">
+           <nav class="footer__menu">
+             <ul class="footer__menu-list">
+               <li class="footer__menu-item">
+                 <a href="about.html">Про нас</a>
+               </li>
+               <li class="footer__menu-item">
+                 <a href="blog.html">Блог</a>
+               </li>
+               <li class="footer__menu-item">
+                 <a href="delivery.html">Оплата і доставка</a>
+               </li>
+               <li class="footer__menu-item">
+                 <a href="faq.html">Поширені питання</a>
+               </li>
+               <li class="footer__menu-item">
+                 <a href="responses.html">Відгуки</a>
+               </li>
+             </ul>
+           </nav>
+    
+           <nav class="footer__catalog">
+             <ul class="footer__catalog-list">
+               <li class="footer__catalog-item">
+                 <a href="catalog.html">Всі товари</a>
+               </li>
+               <li class="footer__catalog-item">
+                 <a href="catalog.html">Тканини за призначенням</a>
+               </li>
+               <li class="footer__catalog-item">
+                 <a href="catalog.html">Новинки</a>
+               </li>
+               <li class="footer__catalog-item">
+                 <a href="catalog.html">Хіти продаж</a>
+               </li>
+               <li class="footer__catalog-item">
+                 <a href="catalog.html">Акції</a>
+               </li>
+               <li class="footer__catalog-item">
+                 <a href="catalog.html">Оптовим покупцям</a>
+               </li>
+             </ul>
+           </nav>
+    
+           <div class="footer__contacts">
+             <ul class="footer__contacts-list">
+               <li class="footer__contacts-item">
+                 <a href="contacts.html">Зв'яжіться з нами</a>
+               </li>
+               <li class="footer__contacts-item">
+                 <a href="tel:+380962688839"
+                   ><i class="fa-solid fa-phone"></i>+380 96 268 88 39</a
+                 >
+               </li>
+               <li class="footer__contacts-item">
+                 <a href="#"
+                   ><i class="fa-brands fa-telegram"></i>Написати в Телеграм</a
+                 >
+               </li>
+               <li class="footer__contacts-item">
+                 <a href="#"
+                   ><i class="fa-brands fa-viber"></i>Написати у Вайбер</a
+                 >
+               </li>
+               <li class="footer__contacts-item">
+                 <a href="/exercises/index.html">Exercises</a>
+               </li>
+             </ul>
+           </div>
+    
+           <div class="footer__address">
+             <div class="address__list">
+               <p class="address__list-title">
+                 <a href="contacts.html">Наша адреса:</a>
+               </p>
+               <div class="address__list-item">
+                 м. Одеса, <br />
+                 ринок «7 км», маг. №4438
+               </div>
+               <div class="address__list-item">
+                 м. Хмельницький, <br />
+                 вул. Геологів 11
+               </div>
+             </div>
+    
+             <div class="social__list">
+               <p class="social__list-title">Ми у соцмережах</p>
+               <a href="#"><i class="fa-brands fa-facebook"></i></a>
+               <a href="#"><i class="fa-brands fa-instagram"></i></a>
+               <a href="#"><i class="fa-brands fa-youtube"></i></a>
+               <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+             </div>
+           </div>
+         </section>
+       </div>
+    
+       <section class="footer__bottom">
+         <a href="#"
+           ><span class="footer__bottom-terms">Terms &amp; Conditions</span></a
+         >
+         <a href="#"
+           ><span class="footer__bottom-privacy">Privacy Policy</span></a
+         >
+         <span class="footer__bottom-copy">&copy; 2024 All rights reserve</span>
+       </section>
+     </footer>
+   </div>
   </body>
 </html>

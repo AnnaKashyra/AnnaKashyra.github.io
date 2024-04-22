@@ -1,0 +1,32 @@
+.profile__data,
+.profile__address{
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  border-radius: .5rem;
+}
+
+.profile__data{
+  margin-bottom: var(--mb-small);
+}
+
+.data__name,
+.profile__address{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.profile__name-name,
+.profile__tel-tel,
+.profile__email-email,
+.profile__address-address{
+  display: inline-block;
+  color: var(--element-bg-color);
+  width: 20%;
+}
+
+.edit a,
+.profile__address-value a{
+  color: var(--active-color);
+}
+

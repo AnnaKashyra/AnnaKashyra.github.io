@@ -1,11 +1,11 @@
 .about,
 .about__top,
 .about__bottom {
-  margin-bottom: 4rem;
+  margin-bottom: var(--mb-large);
 }
 
 .about__info {
-  margin-bottom: 2rem;
+  margin-bottom: var(--mb-small);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,8 +14,8 @@
 .about__item {
   padding: 1rem 2rem;
   width: 23%;
-  border: 2px solid var(--element-bg-color);
-  border-radius: 0.5rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  border-radius: .5rem;
   text-align: center;
   font-size: 1.2rem;
   color: var(--element-bg-color);
@@ -29,7 +29,7 @@
 }
 
 .story {
-  margin-bottom: 2rem;
+  margin-bottom: var(--mb-small);
   display: grid;
   grid-template-areas:
     ". first first ."
@@ -63,14 +63,13 @@
 }
 
 .story__item-text {
-  font-size: 1rem;
   line-height: 150%;
   padding-left: 6rem;
 }
 
 .story__item-text li {
   list-style: disc;
-  margin-bottom: 0.5rem;
+  margin-bottom: .5rem;
 }
 
 .first .story__item-text {

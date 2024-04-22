@@ -1,16 +1,17 @@
 .faq-page {
-  margin-bottom: 4rem;
+  margin-bottom: var(--mb-large);
 }
 
 .accordion {
-  margin: 0 auto 2rem;
+  margin: 0 auto var(--mb-small);
   width: 80%;
 }
 
 .accordion__title,
 .accordion__inner {
+  margin-bottom: var(--mb-small);
   padding: 1rem 2rem;
-  border: 1px solid var(--element-bg-color);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
   border-radius: 0.5rem;
   font-size: 1rem;
   line-height: 150%;

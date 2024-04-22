@@ -1,3 +1,5 @@
+// Маємо код, що будує стрічку публікацій та поміщає отриманий результат всередину елемента з id="blog". Продовжити ланцюжок промісив, використовуючи метод then, де потрібно звернутись до сервера https://jsonplaceholder.typicode.com/users і для кожного userId отримати ім'я user, після чого помістити це ім'я всередину елемента з класом "author-name".
+
 const url = "https://jsonplaceholder.typicode.com/posts";
 
 const template = (item) => `

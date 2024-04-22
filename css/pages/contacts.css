@@ -1,9 +1,96 @@
 .shops,
 .maps,
 .sotial {
-  margin-bottom: 4rem;
+  margin-bottom: var(--mb-large);
 }
 
+/* Tabs */
+.tabs__container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.tabs {
+  display: flex;
+}
+
+.tabs li:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.tabs li a {
+  display: block;
+  position: relative;
+  padding: 1rem 3rem;
+  border-radius: .5rem 0 0 0;
+  background: var(--element-bg-color);
+  color: var(--element-text-color);
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  transition: all 0.1s ease-in-out;
+  pointer-events: none;
+}
+
+.tabs li.is__active a {
+  background: var(--active-color);
+  z-index: 10;
+}
+
+.tabs__content {
+  padding: 1.5rem;
+  position: relative;
+  z-index: 20;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  border-radius: 0 0 .5rem .5rem;
+}
+
+.tabs__panel {
+  display: none;
+  text-align: center;
+}
+
+.tabs__panel .section__title,
+.tabs__panel a{
+  text-transform: none;
+}
+
+.tabs__panel p{
+  margin-bottom: var(--mb-small);
+}
+
+.tabs__panel a{
+  display: inline-block;
+  text-transform: uppercase;
+  color: var(--element-bg-color);
+  transition: color .1s linear;
+}
+
+.tabs__panel a:hover{
+  color: var(--active-color);
+}
+
+.tabs__panel i{
+  margin-right: 1rem;
+}
+
+.tabs__panel span{
+  margin-left: 1rem;
+}
+
+.tabs__panel-list li{
+  margin-bottom: 0.5rem;
+}
+
+.subtitle{
+  display: block;
+  margin-bottom: .7rem;
+}
+
+.tabs__panel.is__active {
+  display: block;
+}
+
+/* Maps */
 .maps__shop-map {
   display: flex;
   justify-content: space-around;
@@ -19,3 +106,59 @@
   line-height: 150%;
   margin-bottom: 1rem;
 }
+
+/* Sotial */
+.sotial__container{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 2rem;
+}
+
+.sotial__item{
+  padding: 1rem;
+  width: 23%;
+  border-radius: .5rem;
+  transition: box-shadow .1s linear; 
+}
+
+.sotial__item:hover{
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.sotial__item:hover a{
+  color: var(--active-color);
+}
+
+.sotial__item-logo{
+  width: 30%;
+  position: relative;
+}
+
+.sotial__item-logo a{
+  color: var(--element-bg-color);
+}
+
+.sotial__item-logo .fa-facebook,
+.sotial__item-logo .fa-instagram,
+.sotial__item-logo .fa-youtube,
+.sotial__item-logo .fa-tiktok{
+  position: absolute;
+  display: block;
+  font-size: 3rem;
+}
+
+.sotial__item-logo .fa-facebook,
+.sotial__item-logo .fa-instagram,
+.sotial__item-logo .fa-youtube,
+.sotial__item-logo .fa-tiktok{
+  top: 1rem;
+  left: 1rem;
+  z-index: 10;
+}
+
+/* Mail */
+.mail{
+  margin-bottom: var(--mb-large);
+}
+

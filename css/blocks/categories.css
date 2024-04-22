@@ -1,5 +1,5 @@
 .categories {
-  margin-bottom: 4rem;
+  margin-bottom: var(--mb-large);
 }
 
 .title {
@@ -7,7 +7,7 @@
   width: 50%;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 2rem;
+  margin-bottom: var(--mb-small);
 }
 
 .title__new,
@@ -15,7 +15,7 @@
 .title__sale {
   text-transform: uppercase;
   color: var(--element-bg-color);
-  transition: color 0.2s linear;
+  transition: color .1s linear;
 }
 
 .title__new:hover,
@@ -27,4 +27,5 @@
 hr {
   height: 2px;
   background-color: var(--element-bg-color);
+  margin-bottom: var(--mb-small);
 }

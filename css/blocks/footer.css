@@ -39,7 +39,7 @@
 .address__list-title a,
 .social__list a,
 .footer__bottom a {
-  transition: color 0.2s linear;
+  transition: color 0.1s linear;
 }
 
 .footer__menu-item a:hover,

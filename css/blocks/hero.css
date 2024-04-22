@@ -1,13 +1,15 @@
 .hero {
-  margin-bottom: 4rem;
+  margin-bottom: var(--mb-large);
+  width: 100%;
 }
 
 .hero__title {
-  margin-bottom: 4rem;
+  margin-bottom: var(--mb-large);
   text-align: center;
   text-transform: uppercase;
   color: var(--active-color);
 }
+
 
 .slider-hero {
   position: relative;
@@ -19,7 +21,7 @@
 }
 
 .slider-hero__title {
-  height: 4rem;
+  padding: .8rem 0;
   background-color: var(--element-bg-color);
   position: absolute;
   top: 12.5rem;
@@ -27,18 +29,37 @@
   right: 0;
   z-index: 10;
   font-size: 3rem;
-  line-height: 4rem;
-  color: var(--element-text-color);
   text-transform: uppercase;
   text-align: center;
-  transition: background-color 0.2s linear, color 0.2s linear;
+  transition: background-color .1s linear, color .1s linear;
+}
+
+.slider-hero__title a{
+  color: var(--element-text-color);
+}
+
+.fa-chevron-left,
+.fa-chevron-right{
+  position: absolute;
+  top: 14rem;
+  z-index: 15;
+  font-size: 2rem;
+  color: var(--element-text-color);
+}
+
+.fa-chevron-left{
+  left: 2rem;
+}
+
+.fa-chevron-right{
+  right: 2rem;
 }
 
 .slider-hero__btn {
   padding: 1rem 2rem;
   min-width: 6rem;
   background-color: var(--element-text-color);
-  border-radius: 0.5rem;
+  border-radius: .5rem;
   position: absolute;
   top: 20rem;
   left: 50%;
@@ -46,7 +67,7 @@
   z-index: 10;
   color: var(--element-bg-color);
   text-transform: uppercase;
-  transition: background-color 0.2s linear, color 0.2s linear;
+  transition: background-color .1s linear, color .1s linear;
 }
 
 .slider-hero__title:hover,

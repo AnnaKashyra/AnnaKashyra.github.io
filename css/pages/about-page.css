@@ -1,6 +1,6 @@
 .about-page,
 .about-page__item {
-  margin-bottom: 4rem;
+  margin-bottom: var(--mb-large);
 }
 
 .about-page__container {

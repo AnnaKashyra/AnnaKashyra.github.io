@@ -1,0 +1,110 @@
+.form__container{
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.form__container-left,
+.form__container-right{
+  width: 50%;
+  padding: 0 2rem;
+}
+
+.form__container-left .section__title,
+.form__container-right .section__title{
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.form__container p{
+  margin-bottom: .5rem;
+}
+
+.form__first-name, .form__last-name, .form__email,
+.form__tel, .form__text, .form__button{
+  margin-bottom: 1rem;
+}
+
+.form__first-name input, .form__last-name input,
+.form__email input,
+.form__tel input, .form__text textarea{
+  width: 100%;
+  padding: .7rem 1rem;
+  box-shadow: 0 5px 30px rgba(0,0,0,0.2);
+  background-color: var(--primery-bg-color);
+  border: 1px solid #fffefc;  
+  /* border: 2px solid var(--element-bg-color); */
+  border-radius: .5rem;
+  color: var(--primary-text-color);
+}
+
+.form__text textarea{
+  height: 10rem;
+}
+
+.form__button{
+  text-align: right;
+}
+
+.form__button input{
+  padding: 1rem 2rem;
+  background-color: var(--element-bg-color);
+  border: 0;
+  border-radius: 0.5rem;
+  font-size: .875rem;
+  color: var(--element-text-color);
+  text-transform: uppercase;
+  transition: background-color .1s linear, color .1s linear;
+}
+
+.form__button input:hover{
+  background-color: var(--active-color);
+  color: var(--element-text-color);
+}
+
+.form__first-name input:focus, .form__last-name input:focus,
+.form__email input:focus,
+.form__tel input:focus, .form__text textarea:focus{
+  border-color: var(--active-color);
+  outline: 0;
+}
+
+.delivery{
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.delivery__country, .delivery__delivery{
+  flex-basis: 45%;
+}
+
+#country, #delivery{
+  width: 100%;
+  padding: .7rem 1rem;
+  box-shadow: 0 5px 30px rgba(0,0,0,0.2);
+  background-color: var(--primery-bg-color);
+  border: 1px solid #fffefc;  
+  /* border: 2px solid var(--element-bg-color); */
+  border-radius: .5rem;
+  color: var(--primary-text-color);
+}
+
+#country:focus, #delivery:focus{
+  border-color: var(--active-color);
+  outline: 0;
+}
+
+.pay{
+  margin-bottom: 1rem;
+}
+
+.pay span{
+  padding-right: 1rem;
+}
+
+.order textarea{
+  height: 5.5rem;
+}

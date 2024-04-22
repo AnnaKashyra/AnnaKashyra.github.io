@@ -10,12 +10,15 @@
   --primary-text-color: #021e20;
   --primary-bg-color: #fffefc;
   --element-text-color: #e8ede7;
-  --element-bg-color: #005067;
+  --element-bg-color: #186378;
   --active-color: #b96b85;
 
   --primary-font-family: "Inter Tight", sans-serif;
 
-  --primary-font-size: 0.875rem;
+  --primary-font-size: 1rem;
+
+  --mb-small: 2rem;
+  --mb-large: 3rem;
 
   --large-screen: 1440px;
   --desktop: 1200px;
@@ -23,6 +26,8 @@
   --tablet: 768px;
   --mobile: 570px;
   --small-mobile: 400px;
+
+  --currency-symbol: "\20B4"
 }
 
 body {
@@ -32,7 +37,23 @@ body {
   font-size: var(--primary-font-size);
 }
 
+.wrapper{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* overflow-x: hidden; */
+}
+
+header{
+  font-size: .875rem;
+}
+
+main{
+  flex: 1 1 auto;
+}
+
 footer {
+  font-size: .875rem;
   color: var(--element-text-color);
   background-color: var(--element-bg-color);
 }
@@ -44,15 +65,15 @@ h3 {
 }
 
 h1 {
-  font-size: clamp(1.5rem, 3vw, 2rem);
-}
-
-h2 {
   font-size: clamp(1.3rem, 2vw, 1.5rem);
 }
 
-h3 {
+h2 {
   font-size: clamp(1.2rem, 1.5vw, 1.3rem);
+}
+
+h3 {
+  font-size: clamp(1rem, 1.3vw, 1.2rem);
 }
 
 ul,
