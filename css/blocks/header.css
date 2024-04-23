@@ -9,44 +9,38 @@
   color: var(--element-text-color);
 }
 
-.fixed {
+/* .fixed {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 100;
-}
+} */
 
-.top-header__container,
-.catalog-header__menu {
-  width: 100%;
-  padding: 1rem 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.top-header__container {
-  margin-bottom: 1rem;
-}
-
-.top-header__menu {
-  flex-basis: 60%;
-}
-
-.top-header__contacts {
-  flex-basis: 30%;
-}
-
-.menu__body,
+.header__top-container,
+.header__body-container,
+.header__catalog-menu,
 .menu__list,
-.contacts__list {
+.contacts__list,
+.toolbar__list {
   width: 100%;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  justify-content: space-between;
+}
+
+.header__top-container,
+.menu__catalog{
+  padding: 1rem 0;
+}
+
+.header__top-menu {
+  flex-basis: 72%;
+}
+
+.header__top-contacts {
+  flex-basis: 28%;
 }
 
 .menu__item {
@@ -61,6 +55,8 @@
   letter-spacing: 1px;
   color: var(--element-text-color);
   transition: color 0.1s linear;
+  display: inline-block;
+  line-height: 100%;
 }
 
 .menu__item a:hover,
@@ -79,23 +75,19 @@
 }
 
 /* Header__body */
-.body-header__container {
+.header__body-container {
   margin-bottom: 1rem;
-  padding: 0 1.5rem;
+  padding: 1rem 1.5rem 0 1.5rem;
   background-color: var(--primary-bg-color);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
 }
 
-.body-header__contacts,
-.body-header__brand,
-.toolbar {
-  flex-basis: 23%;
+.header__body-contacts,
+.header__body-brand,
+.header__body-toolbar {
+  flex-basis: 28%;
 }
 
-.body-header__brand {
+.header__body-brand {
   max-width: 12rem;
 }
 
@@ -110,14 +102,14 @@
   text-align: center;
 }
 
-.body-header__contacts {
+.header__body-contacts {
   display: flex;
   flex-direction: column;
   min-height: 4.5rem;
   justify-content: space-around;
 }
 
-.body-header__contacts a,
+.header__body-contacts a,
 .toolbar__item a {
   display: inline-block;
   text-transform: uppercase;
@@ -125,15 +117,15 @@
   transition: color 0.1s linear;
 }
 
-.body-header__contacts i,
+.header__body-contacts i,
 .toolbar__item i {
   display: inline-block;
   margin-right: 1rem;
   transition: color 0.1s linear;
 }
 
-.body-header__contacts a:hover,
-.body-header__contacts i:hover {
+.header__body-contacts a:hover,
+.header__body-contacts i:hover {
   color: var(--active-color);
 }
 
@@ -177,12 +169,6 @@
   opacity: 0;
 }
 
-.toolbar__list {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
 .toolbar__item a {
   display: inline-block;
   text-transform: uppercase;
@@ -197,6 +183,55 @@
 .fa-solid,
 .fa-brands {
   font-size: 1rem;
+}
+
+/* Drop down menu */
+.menu__catalog{
+  position: relative;
+}
+
+.menu__catalog:hover .menu__dropdown{
+  transform: rotateX(0deg);
+  visibility: visible;
+  opacity: 1;
+}
+
+.menu__dropdown{
+  padding: 1rem;
+  background-color: var(--primary-bg-color);
+  width: 46rem;
+  border-radius: 0.5rem;
+  position: absolute;
+  top: 3rem;
+  left: 0;
+  z-index: 100;
+  column-count: 4;
+  transform-origin: 0 0;
+  transform: rotateX(-90deg);
+  transition: transform 0.5s linear;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.second__dropdown{
+  column-count: 3;
+}
+
+.dropdown__item{
+  padding: 0.3rem 0;
+  margin-bottom: 0.3rem;
+}
+
+.dropdown__item a{
+  color: var(--element-bg-color);
+  font-size: 1rem;
+  text-transform: none;
+}
+
+.dropdown__item a:hover{
+  outline: 0.5rem solid #fffefc;
+  box-shadow: 0 10px 30px #363636;
+  border-radius: 0.05rem;
 }
 
 /* Burger__menu */
@@ -220,3 +255,45 @@
   height: 3px;
   background-color: var(--element-bg-color);
 }
+
+/* Media */
+/* Large */
+/* @media (max-width: 90rem){
+
+} */
+
+/* Desktop */
+/* @media (max-width: 75rem){
+  .header__top{
+    display: none;
+  }
+} */
+
+/* Laptop */
+@media (max-width: 62rem){
+  .header__top,
+  .item__account{
+    display: none;
+  }
+
+  .menu__catalog{
+    font-size: 0.75rem;
+  }
+}
+
+/* Tablet */
+@media (max-width: 48rem){
+  .header__body-contacts{
+    display: none;
+  }
+
+  .header__body-brand,
+  .header__body-toolbar{
+    flex-basis: 40%;
+  }
+}
+
+/* Mobile */
+/* @media (max-width: 36rem){
+
+} */

@@ -26,8 +26,7 @@
 .form__last-name,
 .form__email,
 .form__tel,
-.form__text,
-.form__button {
+.form__text {
   margin-bottom: 1rem;
 }
 
@@ -50,24 +49,10 @@
   height: 10rem;
 }
 
-.form__button {
+.form__container-right .common__button {
   text-align: right;
-}
-
-.form__button input {
-  padding: 1rem 2rem;
-  background-color: var(--element-bg-color);
-  border: 0;
-  border-radius: 0.5rem;
-  font-size: 0.875rem;
-  color: var(--element-text-color);
-  text-transform: uppercase;
-  transition: background-color 0.1s linear, color 0.1s linear;
-}
-
-.form__button input:hover {
-  background-color: var(--active-color);
-  color: var(--element-text-color);
+  margin-bottom: 1rem;
+  cursor: pointer;
 }
 
 .form__first-name input:focus,
@@ -79,6 +64,7 @@
   outline: 0;
 }
 
+/* Order */
 .delivery {
   margin-bottom: 1rem;
   display: flex;

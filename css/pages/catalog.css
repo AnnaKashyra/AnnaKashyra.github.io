@@ -1,25 +1,68 @@
-.choice {
+.filter__container{
   margin-bottom: var(--mb-small);
   display: flex;
   justify-content: space-between;
 }
 
-.filtres__button {
-  padding: 1rem 2rem;
-  background-color: var(--element-bg-color);
+.choice {  
+  position: relative;
+  flex-basis: 60%;
+}
+
+.filters {
+  display: flex;
+  justify-content: flex-start;
+  padding: 1rem;
+  background-color: var(--primary-bg-color);
   border-radius: 0.5rem;
-  font-size: 0.875rem;
-  color: var(--element-text-color);
-  text-transform: uppercase;
-  transition: background-color 0.1s linear, color 0.1s linear;
+  box-shadow: 0 10px 30px #363636;
+  position: absolute;
+  top: 0;
+  left: -1rem;
+  z-index: 100;
+  transform-origin: 0 0;
+  transform: rotateX(-90deg);
+  transition: transform 0.5s linear;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.filters__item{
+  padding: 0.3rem 6rem 0.3rem 0;  
+}
+
+.filters__item p{
+  color: var(--element-bg-color);
+  font-weight: 600;
+}
+
+.filters__item .common__button,
+.choice .common__button{
+  text-align: left;
   cursor: pointer;
 }
 
-.filtres__button:hover {
-  background-color: var(--active-color);
-  color: var(--element-text-color);
+.filters__inner{
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
 }
 
+.filters__inner-item{
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.filters__inner-item span{
+  padding-left: 0.5rem;
+}
+
+/* .choice .common__button:hover .filters{
+  transform: rotateX(0deg);
+  visibility: visible;
+  opacity: 1;
+} */
+
+/* Sort */
 .sort {
   display: flex;
   align-items: baseline;

@@ -12,35 +12,34 @@
     <div class="wrapper">
       <header class="header">
         <!-- Header__top -->
-        <div class="header__top top-header">
+        <div class="header__top">
           <div class="container">
-            <div class="top-header__container">
-              <div class="top-header__menu menu">
-                <nav class="menu__body">
-                  <ul class="menu__list">
-                    <li class="menu__item active">
-                      <a href="index.html">Головна</a>
-                    </li>
-                    <li class="menu__item">
-                      <a href="html/about.html">Про нас</a>
-                    </li>
-                    <li class="menu__item">
-                      <a href="html/blog.html">Блог</a>
-                    </li>
-                    <li class="menu__item">
-                      <a href="html/delivery.html">Оплата і доставка</a>
-                    </li>
-                    <li class="menu__item">
-                      <a href="html/delivery.html">Поширені питання</a>
-                    </li>
-                    <li class="menu__item">
-                      <a href="html/responses.html">Відгуки</a>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
+            <div class="header__top-container">
 
-              <nav class="top-header__contacts contacts">
+              <nav class="header__top-menu">
+                <ul class="menu__list">
+                  <li class="menu__item active">
+                    <a href="index.html">Головна</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="html/about.html">Про нас</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="html/blog.html">Блог</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="html/delivery.html">Оплата і доставка</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="html/delivery.html">Поширені питання</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="html/responses.html">Відгуки</a>
+                  </li>
+                </ul>
+              </nav>
+
+              <nav class="header__top-contacts">
                 <ul class="contacts__list">
                   <li class="contacts__item">
                     <a
@@ -69,7 +68,7 @@
                     ></a>
                   </li>
                   <li class="contacts__item contacts__btn">
-                    <a href="html/contacts.html">Зв'яжіться з нами</a>
+                    <a href="html/contacts.html">Контакти</a>
                   </li>
                 </ul>
               </nav>
@@ -80,10 +79,10 @@
         </div>
 
         <!-- Header__body -->
-        <div class="header__body body-header">
+        <div class="header__body">
           <div class="container">
-            <div class="body-header__container">
-              <div class="body-header__contacts">
+            <div class="header__body-container">
+              <div class="header__body-contacts">
                 <a href="tel:+380962688839"
                   ><i class="fa-solid fa-phone"></i>+380 96 268 88 39</a
                 >
@@ -95,7 +94,7 @@
                 >
               </div>
 
-              <div class="body-header__brand brand">
+              <div class="header__body-brand">
                 <a href="#" class="brand__logo">
                   <img src="images/logo.svg" alt="Логотип Palmira Textile" />
                   <p class="brand__title">Оптовий постачальник тканин №1</p>
@@ -103,19 +102,21 @@
               </div>
 
               <!-- Toolbar -->
-              <div class="body-header__toolbar toolbar">
-                <form action="#" class="toolbar__search">
-                  <button type="submit" class="toolbar__search-button">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                  </button>
-                  <input
-                    class="toolbar__search-input"
-                    type="search"
-                    autocomplete="off"
-                    name="search"
-                    placeholder="Пошук"
-                  />
-                </form>
+              <div class="header__body-toolbar">
+                <div class="toolbar__search">
+                  <form id="search" name="search" action="#">
+                    <button type="submit" class="toolbar__search-button">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <input
+                      class="toolbar__search-input"
+                      type="search"
+                      autocomplete="off"
+                      name="search"
+                      placeholder="Пошук"
+                    />
+                  </form>
+                </div>
 
                 <nav class="toolbar__account">
                   <ul class="toolbar__list">
@@ -131,7 +132,7 @@
                     </li>
                     <li class="toolbar__item">
                       <a href="html/account.html"
-                        ><i class="fa-solid fa-user"></i>Особистий кабінет</a
+                        ><i class="fa-solid fa-user"></i><span class="item__account">Особистий кабінет</span></a
                       >
                     </li>
                   </ul>
@@ -140,22 +141,70 @@
             </div>
 
             <!-- Burger__menu -->
-            <button type="button" class="burger__menu">
-              <span></span>
-            </button>
+            <nav class="burger__menu">
+              <button type="button" class="burger__menu-button">
+                <span></span>
+              </button>
+              <div class="burger__menu-body"></div>
+            </nav>
           </div>
           <!-- container -->
         </div>
 
         <!-- Header__catalog -->
-        <div class="header__catalog catalog-header">
+        <div class="header__catalog">
           <div class="container">
-            <nav class="catalog-header__menu menu">
+            <nav class="header__catalog-menu">
               <li class="menu__catalog">
                 <a href="html/catalog.html">Всі товари</a>
+                <ul class="menu__dropdown">
+                  <li class="dropdown__item"><a href="#">Атлас</a></li>
+                  <li class="dropdown__item"><a href="#">Батист</a></li>
+                  <li class="dropdown__item"><a href="#">Бенгалін</a></li>
+                  <li class="dropdown__item"><a href="#">Букле</a></li>
+                  <li class="dropdown__item"><a href="#">Віскоза</a></li>
+                  <li class="dropdown__item"><a href="#">Вовна</a></li>
+                  <li class="dropdown__item"><a href="#">Гіпюр</a></li>
+                  <li class="dropdown__item"><a href="#">Дайвінг</a></li>
+                  <li class="dropdown__item"><a href="#">Двонитка</a></li>
+                  <li class="dropdown__item"><a href="#">Джинс</a></li>
+                  <li class="dropdown__item"><a href="#">Екошкіра</a></li>
+                  <li class="dropdown__item"><a href="#">Жаккард</a></li>
+                  <li class="dropdown__item"><a href="#">Замша</a></li>
+                  <li class="dropdown__item"><a href="#">Кашемір</a></li>
+                  <li class="dropdown__item"><a href="#">Костюмна</a></li>
+                  <li class="dropdown__item"><a href="#">Коттон</a></li>
+                  <li class="dropdown__item"><a href="#">Креп</a></li>
+                  <li class="dropdown__item"><a href="#">Льон</a></li>
+                  <li class="dropdown__item"><a href="#">Плащівка</a></li>
+                  <li class="dropdown__item"><a href="#">Підкладка</a></li>
+                  <li class="dropdown__item"><a href="#">Сатин</a></li>
+                  <li class="dropdown__item"><a href="#">Суперсофт</a></li>
+                  <li class="dropdown__item"><a href="#">Твід</a></li>
+                  <li class="dropdown__item"><a href="#">Трикотаж</a></li>
+                  <li class="dropdown__item"><a href="#">Хутро</a></li>
+                  <li class="dropdown__item"><a href="#">Шовк</a></li>
+                  <li class="dropdown__item"><a href="#">Шифон</a></li>
+                  <li class="dropdown__item"><a href="#">Штапель</a></li>
+                </ul>
               </li>
               <li class="menu__catalog">
                 <a href="html/catalog.html">Тканини за призначенням</a>
+                <ul class="menu__dropdown second__dropdown">
+                  <li class="dropdown__item"><a href="#">Весняно-літні тканини</a></li>
+                  <li class="dropdown__item"><a href="#">Осінньо-зимові тканини</a></li>
+                  <li class="dropdown__item"><a href="#">Для блузок/сорочок</a></li>
+                  <li class="dropdown__item"><a href="#">Для суконь</a></li>
+                  <li class="dropdown__item"><a href="#">Для костюмів</a></li>
+                  <li class="dropdown__item"><a href="#">Для спідниць</a></li>
+                  <li class="dropdown__item"><a href="#">Для брюк</a></li>
+                  <li class="dropdown__item"><a href="#">Для курток/плащів</a></li>
+                  <li class="dropdown__item"><a href="#">Для пальто</a></li>
+                  <li class="dropdown__item"><a href="#">Для святкового одягу</a></li>
+                  <li class="dropdown__item"><a href="#">Для дитячого одягу</a></li>
+                  <li class="dropdown__item"><a href="#">Для оздоблення</a></li>
+                  <li class="dropdown__item"><a href="#">Підкладка</a></li>
+                </ul>
               </li>
               <li class="menu__catalog">
                 <a href="html/catalog.html">Новинки</a>
@@ -249,7 +298,7 @@
                     </div>
 
                     <div class="common__button">
-                      <a href="html/about.html" class="common__btn">У кошик</a>
+                      <a href="html/cart.html" class="common__btn">У кошик</a>
                     </div>
                   </div>
                 </div>
@@ -283,7 +332,7 @@
                     </div>
 
                     <div class="common__button">
-                      <a href="html/about.html" class="common__btn">У кошик</a>
+                      <a href="html/cart.html" class="common__btn">У кошик</a>
                     </div>
                   </div>
                 </div>
@@ -319,7 +368,7 @@
                     </div>
 
                     <div class="common__button">
-                      <a href="html/about.html" class="common__btn">У кошик</a>
+                      <a href="html/cart.html" class="common__btn">У кошик</a>
                     </div>
                   </div>
                 </div>
@@ -355,7 +404,7 @@
                     </div>
 
                     <div class="common__button">
-                      <a href="html/about.html" class="common__btn">У кошик</a>
+                      <a href="html/cart.html" class="common__btn">У кошик</a>
                     </div>
                   </div>
                 </div>
@@ -391,7 +440,7 @@
                     </div>
 
                     <div class="common__button">
-                      <a href="html/about.html" class="common__btn">У кошик</a>
+                      <a href="html/cart.html" class="common__btn">У кошик</a>
                     </div>
                   </div>
                 </div>
@@ -428,7 +477,7 @@
                     </div>
 
                     <div class="common__button">
-                      <a href="html/about.html" class="common__btn">У кошик</a>
+                      <a href="html/cart.html" class="common__btn">У кошик</a>
                     </div>
                   </div>
                 </div>
@@ -464,7 +513,7 @@
                     </div>
 
                     <div class="common__button">
-                      <a href="html/about.html" class="common__btn">У кошик</a>
+                      <a href="html/cart.html" class="common__btn">У кошик</a>
                     </div>
                   </div>
                 </div>
@@ -501,7 +550,7 @@
                     </div>
 
                     <div class="common__button">
-                      <a href="html/about.html" class="common__btn">У кошик</a>
+                      <a href="html/cart.html" class="common__btn">У кошик</a>
                     </div>
                   </div>
                 </div>
