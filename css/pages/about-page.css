@@ -6,6 +6,7 @@
 .about-page__container {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .about-page__text,
@@ -40,4 +41,51 @@
 
 .order__list a {
   color: var(--active-color);
+}
+
+
+/*********** Media *************/
+/* Large */
+/* @media (max-width: 90rem){
+} */
+
+/* Desktop */
+@media (max-width: 75rem){
+  .about-page__list {
+    padding: 0 14rem;
+}
+}
+
+/* Laptop */
+@media (max-width: 62rem) {
+  .about-page__container{
+    padding: 0 3rem;
+  }
+
+  .about-page__text,
+  .about-page__img {
+    width: 100%;
+  }
+
+  .about-page__img{
+    text-align: center;
+  }
+
+  .about-page__list {
+    padding: 0 11rem;
+  }
+}
+
+/* Tablet */
+@media (max-width: 48rem) {
+	.about-page__list {
+    padding: 0 8rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 36rem){
+  .about-page__list {
+    padding: 0 5rem;
+  }
 }

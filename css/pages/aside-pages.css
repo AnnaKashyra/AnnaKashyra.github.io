@@ -58,3 +58,79 @@
 .aside__categories-common {
   text-transform: uppercase;
 }
+
+/************ Media ****************/
+/* Large */
+/* @media (max-width: 90rem){
+
+} */
+
+/* Desktop */
+/* @media (max-width: 75rem){
+  
+} */
+
+/* Laptop */
+/* @media (max-width: 62rem){
+ 
+} */
+
+/* Tablet */
+@media (max-width: 48rem){
+  .account__aside,
+  .catalog__aside,
+  .blog__aside,  
+  .account__main,
+  .catalog__main,
+  .blog__main {
+    flex-basis: 100%;
+  }
+
+  .aside__container{
+    position: relative;
+  }
+
+  .aside__header h2:hover{
+    color: var(--active-color);
+  }
+  
+  .aside__header .fa-chevron-right{
+    padding-left: 0.5rem;
+    position: static;
+    color: var(--element-bg-color);
+    font-size: 1rem;
+    display: inline-block;
+  }
+
+  .aside__categories{
+    padding: 1rem 2rem;
+    width: 40%;
+    position: absolute;
+    top: 0;
+    left: 8rem;
+    z-index: 100;
+    background-color: var(--primary-bg-color);
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 30px #363636;
+    transform-origin: 0 0;
+		transform: rotateX(-90deg);
+		transition: transform 0.5s linear;
+		visibility: hidden;
+		opacity: 0;
+  }
+
+  .aside__container:hover .aside__categories{
+    transform: rotateX(0deg);
+		visibility: visible;
+		opacity: 1;
+  }
+
+  .breadcrumbs__list{
+    text-align: right;
+  }
+}
+
+/* Mobile */
+/* @media (max-width: 36rem){
+  
+} */

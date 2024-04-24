@@ -40,3 +40,30 @@
   z-index: 10;
   transform: translateY(-50%);
 }
+
+/*********** Media *************/
+/* Large */
+/* @media (max-width: 90rem){
+} */
+
+/* Desktop */
+/* @media (max-width: 75rem){
+} */
+
+/* Laptop */
+/* @media (max-width: 62rem) {
+	
+} */
+
+/* Tablet */
+@media (max-width: 48rem) {
+	.accordion {
+    width: 85%;
+  }
+}
+
+/* Mobile */
+/* @media (max-width: 36rem){
+ 
+} */
+

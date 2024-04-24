@@ -98,7 +98,7 @@
 }
 
 .maps__shop-item {
-  width: 30%;
+  width: 25%;
 }
 
 .maps__shop-text {
@@ -117,7 +117,7 @@
 
 .sotial__item {
   padding: 1rem;
-  width: 23%;
+  flex-basis: 23%;
   border-radius: 0.5rem;
   transition: box-shadow 0.1s linear;
 }
@@ -161,3 +161,40 @@
 .mail {
   margin-bottom: var(--mb-large);
 }
+
+/*********** Media *************/
+/* Large */
+/* @media (max-width: 90rem){
+} */
+
+/* Desktop */
+@media (max-width: 75rem){
+  /* .maps__shop-item {
+    width: 48%;
+  } */
+}
+
+/* Laptop */
+@media (max-width: 62rem) {
+  .tabs li a{
+    font-size: 0.75rem;
+    padding: 1rem 1rem;
+  }
+
+  .sotial__item{
+    flex-basis: 48%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 48rem) {
+  .tabs li a{
+    font-size: 0.625rem;
+  }
+}
+
+/* Mobile */
+/* @media (max-width: 36rem){
+
+} */
+

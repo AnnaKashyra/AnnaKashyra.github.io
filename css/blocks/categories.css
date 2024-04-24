@@ -2,7 +2,7 @@
   margin-bottom: var(--mb-large);
 }
 
-.title {
+.categories__title {
   margin: 0 auto;
   width: 50%;
   display: flex;
@@ -29,3 +29,31 @@ hr {
   background-color: var(--element-bg-color);
   margin-bottom: var(--mb-small);
 }
+
+/* Media */
+/* Large */
+/* @media (max-width: 90rem){
+
+} */
+
+/* Desktop */
+/* @media (max-width: 75rem){
+  
+} */
+
+/* Laptop */
+/* @media (max-width: 62rem){
+ 
+} */
+
+/* Tablet */
+@media (max-width: 48rem){
+  .categories__title{
+    width: 80%;
+  }
+}
+
+/* Mobile */
+/* @media (max-width: 36rem){
+
+} */

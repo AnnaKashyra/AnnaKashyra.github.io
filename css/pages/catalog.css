@@ -56,11 +56,11 @@
   padding-left: 0.5rem;
 }
 
-/* .choice .common__button:hover .filters{
+.choice .common__button:focus .filters{
   transform: rotateX(0deg);
   visibility: visible;
   opacity: 1;
-} */
+}
 
 /* Sort */
 .sort {
@@ -81,3 +81,28 @@
   outline: 0;
   border: 2px solid var(--element-bg-color);
 }
+
+/*********** Media *************/
+/* Large */
+/* @media (max-width: 90rem){
+} */
+
+/* Desktop */
+/* @media (max-width: 75rem){
+} */
+
+/* Laptop */
+/* @media (max-width: 62rem) {
+} */
+
+/* Tablet */
+@media (max-width: 48rem) {
+	.catalog__main .section__title{
+    display: none;
+  }
+}
+
+/* Mobile */
+/* @media (max-width: 36rem){
+
+} */

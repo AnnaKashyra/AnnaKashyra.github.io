@@ -37,3 +37,34 @@
 .blog__inner-next a {
   color: var(--active-color);
 }
+
+/************ Media ****************/
+/* Large */
+/* @media (max-width: 90rem){
+
+} */
+
+/* Desktop */
+/* @media (max-width: 75rem){
+  
+} */
+
+/* Laptop */
+/* @media (max-width: 62rem){
+ 
+} */
+
+/* Tablet */
+/* @media (max-width: 48rem){
+} */
+
+/* Mobile */
+@media (max-width: 36rem){
+  .blog__img, .blog__inner{
+    flex-basis: 100%;
+  }
+
+  .blog__img{
+    margin-bottom: 1rem;
+  }
+}

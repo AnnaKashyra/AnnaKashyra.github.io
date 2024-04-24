@@ -15,10 +15,10 @@
 
   --primary-font-family: "Inter Tight", sans-serif;
 
-  --primary-font-size: 1rem;
+  --primary-font-size: clamp(0.75rem, 0.5833rem + 0.463vw, 1rem);
 
-  --mb-small: 2rem;
-  --mb-large: 3rem;
+  --mb-small: clamp(1rem, 0.3333rem + 1.8519vw, 2rem);
+  --mb-large: clamp(2rem, 1.3333rem + 1.8519vw, 3rem);;
 
   --currency-symbol: "\20B4";
 }
@@ -56,17 +56,16 @@ h2,
 h3 {
   font-weight: 600;
 }
-
 h1 {
-  font-size: clamp(1.3rem, 2vw, 1.5rem);
+  font-size: clamp(1.25rem, 1.0833rem + 0.463vw, 1.5rem);
 }
 
 h2 {
-  font-size: clamp(1.2rem, 1.5vw, 1.3rem);
+  font-size: clamp(1.125rem, 1.0417rem + 0.2315vw, 1.25rem);
 }
 
 h3 {
-  font-size: clamp(1rem, 1.3vw, 1.2rem);
+  font-size: clamp(1rem, 0.9167rem + 0.2315vw, 1.125rem);
 }
 
 ul,
@@ -79,6 +78,7 @@ a {
 }
 
 button {
+  outline: none;
   border: 0;
   background-color: transparent;
 }

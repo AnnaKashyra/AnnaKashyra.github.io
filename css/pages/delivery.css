@@ -32,11 +32,12 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  gap: 2rem;
 }
 
 .delivery__company-logo {
   display: block;
-  flex-basis: 33%;
+  flex-basis: 28%;
   text-align: center;
 }
 
@@ -47,3 +48,49 @@
 .return .common__button {
   margin-bottom: var(--mb-large);
 }
+
+
+/*********** Media *************/
+/* Large */
+/* @media (max-width: 90rem){
+} */
+
+/* Desktop */
+/* @media (max-width: 75rem){
+} */
+
+/* Laptop */
+@media (max-width: 62rem) {
+  .delivery__company-logo{
+    flex-basis: 45%;
+  }
+
+  .delivery__text{
+    width: 100%;
+  }
+
+  .delivery__list li {
+    margin: 0 1rem;
+  }
+
+  .return .delivery__list li{
+    margin-bottom: 1rem;
+  }
+
+  .delivery__list-inner li{
+    margin: 0 2rem;
+  }
+}
+
+/* Tablet */
+/* @media (max-width: 48rem) {
+
+} */
+
+/* Mobile */
+@media (max-width: 36rem){
+  .delivery__company-logo{
+    flex-basis: 100%;
+  }
+}
+

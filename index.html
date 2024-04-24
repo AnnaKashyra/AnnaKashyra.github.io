@@ -15,26 +15,25 @@
         <div class="header__top">
           <div class="container">
             <div class="header__top-container">
-
               <nav class="header__top-menu">
                 <ul class="menu__list">
                   <li class="menu__item active">
-                    <a href="index.html">Головна</a>
+                    <a href="/index.html">Головна</a>
                   </li>
                   <li class="menu__item">
-                    <a href="html/about.html">Про нас</a>
+                    <a href="/html/about.html">Про нас</a>
                   </li>
                   <li class="menu__item">
-                    <a href="html/blog.html">Блог</a>
+                    <a href="/html/blog.html">Блог</a>
                   </li>
                   <li class="menu__item">
-                    <a href="html/delivery.html">Оплата і доставка</a>
+                    <a href="/html/delivery.html">Оплата і доставка</a>
                   </li>
                   <li class="menu__item">
-                    <a href="html/delivery.html">Поширені питання</a>
+                    <a href="/html/faq.html">Поширені питання</a>
                   </li>
                   <li class="menu__item">
-                    <a href="html/responses.html">Відгуки</a>
+                    <a href="/html/">Відгуки</a>
                   </li>
                 </ul>
               </nav>
@@ -68,7 +67,7 @@
                     ></a>
                   </li>
                   <li class="contacts__item contacts__btn">
-                    <a href="html/contacts.html">Контакти</a>
+                    <a href="/html/contacts.html">Контакти</a>
                   </li>
                 </ul>
               </nav>
@@ -96,7 +95,7 @@
 
               <div class="header__body-brand">
                 <a href="#" class="brand__logo">
-                  <img src="images/logo.svg" alt="Логотип Palmira Textile" />
+                  <img src="/images/logo.svg" alt="Логотип Palmira Textile" />
                   <p class="brand__title">Оптовий постачальник тканин №1</p>
                 </a>
               </div>
@@ -126,27 +125,20 @@
                       ></a>
                     </li>
                     <li class="toolbar__item">
-                      <a href="html/cart.html"
+                      <a href="/html/cart.html"
                         ><i class="fa-solid fa-cart-shopping" title="Кошик"></i
                       ></a>
                     </li>
                     <li class="toolbar__item">
-                      <a href="html/account.html"
-                        ><i class="fa-solid fa-user"></i><span class="item__account">Особистий кабінет</span></a
+                      <a href="/html/account.html"
+                        ><i class="fa-solid fa-user"></i
+                        ><span class="item__account">Особистий кабінет</span></a
                       >
                     </li>
                   </ul>
                 </nav>
               </div>
             </div>
-
-            <!-- Burger__menu -->
-            <nav class="burger__menu">
-              <button type="button" class="burger__menu-button">
-                <span></span>
-              </button>
-              <div class="burger__menu-body"></div>
-            </nav>
           </div>
           <!-- container -->
         </div>
@@ -154,70 +146,127 @@
         <!-- Header__catalog -->
         <div class="header__catalog">
           <div class="container">
-            <nav class="header__catalog-menu">
-              <li class="menu__catalog">
-                <a href="html/catalog.html">Всі товари</a>
-                <ul class="menu__dropdown">
-                  <li class="dropdown__item"><a href="#">Атлас</a></li>
-                  <li class="dropdown__item"><a href="#">Батист</a></li>
-                  <li class="dropdown__item"><a href="#">Бенгалін</a></li>
-                  <li class="dropdown__item"><a href="#">Букле</a></li>
-                  <li class="dropdown__item"><a href="#">Віскоза</a></li>
-                  <li class="dropdown__item"><a href="#">Вовна</a></li>
-                  <li class="dropdown__item"><a href="#">Гіпюр</a></li>
-                  <li class="dropdown__item"><a href="#">Дайвінг</a></li>
-                  <li class="dropdown__item"><a href="#">Двонитка</a></li>
-                  <li class="dropdown__item"><a href="#">Джинс</a></li>
-                  <li class="dropdown__item"><a href="#">Екошкіра</a></li>
-                  <li class="dropdown__item"><a href="#">Жаккард</a></li>
-                  <li class="dropdown__item"><a href="#">Замша</a></li>
-                  <li class="dropdown__item"><a href="#">Кашемір</a></li>
-                  <li class="dropdown__item"><a href="#">Костюмна</a></li>
-                  <li class="dropdown__item"><a href="#">Коттон</a></li>
-                  <li class="dropdown__item"><a href="#">Креп</a></li>
-                  <li class="dropdown__item"><a href="#">Льон</a></li>
-                  <li class="dropdown__item"><a href="#">Плащівка</a></li>
-                  <li class="dropdown__item"><a href="#">Підкладка</a></li>
-                  <li class="dropdown__item"><a href="#">Сатин</a></li>
-                  <li class="dropdown__item"><a href="#">Суперсофт</a></li>
-                  <li class="dropdown__item"><a href="#">Твід</a></li>
-                  <li class="dropdown__item"><a href="#">Трикотаж</a></li>
-                  <li class="dropdown__item"><a href="#">Хутро</a></li>
-                  <li class="dropdown__item"><a href="#">Шовк</a></li>
-                  <li class="dropdown__item"><a href="#">Шифон</a></li>
-                  <li class="dropdown__item"><a href="#">Штапель</a></li>
+            <nav class="header__catalog-container">
+              <div class="header__catalog-inner">
+                <div class="common__button dropdown__catalog">
+                  <button class="common__btn" type="menu" name="menu__button">
+                    Каталог
+                  </button>
+                </div>
+
+                <ul class="header__catalog-menu">
+                  <li class="menu__catalog">
+                    <a href="/html/catalog.html">Всі товари</a>
+                    <ul class="menu__dropdown">
+                      <li class="dropdown__item"><a href="#">Атлас</a></li>
+                      <li class="dropdown__item"><a href="#">Батист</a></li>
+                      <li class="dropdown__item"><a href="#">Бенгалін</a></li>
+                      <li class="dropdown__item"><a href="#">Букле</a></li>
+                      <li class="dropdown__item"><a href="#">Віскоза</a></li>
+                      <li class="dropdown__item"><a href="#">Вовна</a></li>
+                      <li class="dropdown__item"><a href="#">Гіпюр</a></li>
+                      <li class="dropdown__item"><a href="#">Дайвінг</a></li>
+                      <li class="dropdown__item"><a href="#">Двонитка</a></li>
+                      <li class="dropdown__item"><a href="#">Джинс</a></li>
+                      <li class="dropdown__item"><a href="#">Екошкіра</a></li>
+                      <li class="dropdown__item"><a href="#">Жаккард</a></li>
+                      <li class="dropdown__item"><a href="#">Замша</a></li>
+                      <li class="dropdown__item"><a href="#">Кашемір</a></li>
+                      <li class="dropdown__item"><a href="#">Костюмна</a></li>
+                      <li class="dropdown__item"><a href="#">Коттон</a></li>
+                      <li class="dropdown__item"><a href="#">Креп</a></li>
+                      <li class="dropdown__item"><a href="#">Льон</a></li>
+                      <li class="dropdown__item"><a href="#">Плащівка</a></li>
+                      <li class="dropdown__item"><a href="#">Підкладка</a></li>
+                      <li class="dropdown__item"><a href="#">Сатин</a></li>
+                      <li class="dropdown__item"><a href="#">Суперсофт</a></li>
+                      <li class="dropdown__item"><a href="#">Твід</a></li>
+                      <li class="dropdown__item"><a href="#">Трикотаж</a></li>
+                      <li class="dropdown__item"><a href="#">Хутро</a></li>
+                      <li class="dropdown__item"><a href="#">Шовк</a></li>
+                      <li class="dropdown__item"><a href="#">Шифон</a></li>
+                      <li class="dropdown__item"><a href="#">Штапель</a></li>
+                    </ul>
+                  </li>
+                  <li class="menu__catalog">
+                    <a href="/html/catalog.html">Тканини за призначенням</a>
+                    <ul class="menu__dropdown second__dropdown">
+                      <li class="dropdown__item">
+                        <a href="#">Весняно-літні тканини</a>
+                      </li>
+                      <li class="dropdown__item">
+                        <a href="#">Осінньо-зимові тканини</a>
+                      </li>
+                      <li class="dropdown__item">
+                        <a href="#">Для блузок/сорочок</a>
+                      </li>
+                      <li class="dropdown__item"><a href="#">Для суконь</a></li>
+                      <li class="dropdown__item">
+                        <a href="#">Для костюмів</a>
+                      </li>
+                      <li class="dropdown__item">
+                        <a href="#">Для спідниць</a>
+                      </li>
+                      <li class="dropdown__item"><a href="#">Для брюк</a></li>
+                      <li class="dropdown__item">
+                        <a href="#">Для курток/плащів</a>
+                      </li>
+                      <li class="dropdown__item"><a href="#">Для пальто</a></li>
+                      <li class="dropdown__item">
+                        <a href="#">Для святкового одягу</a>
+                      </li>
+                      <li class="dropdown__item">
+                        <a href="#">Для дитячого одягу</a>
+                      </li>
+                      <li class="dropdown__item">
+                        <a href="#">Для оздоблення</a>
+                      </li>
+                      <li class="dropdown__item"><a href="#">Підкладка</a></li>
+                    </ul>
+                  </li>
+                  <li class="menu__catalog">
+                    <a href="/html/catalog.html">Новинки</a>
+                  </li>
+                  <li class="menu__catalog">
+                    <a href="/html/catalog.html">Хіти продаж</a>
+                  </li>
+                  <li class="menu__catalog">
+                    <a href="/html/catalog.html">Акції</a>
+                  </li>
+                  <li class="menu__catalog">
+                    <a href="/html/catalog.html">Оптовим покупцям</a>
+                  </li>
                 </ul>
-              </li>
-              <li class="menu__catalog">
-                <a href="html/catalog.html">Тканини за призначенням</a>
-                <ul class="menu__dropdown second__dropdown">
-                  <li class="dropdown__item"><a href="#">Весняно-літні тканини</a></li>
-                  <li class="dropdown__item"><a href="#">Осінньо-зимові тканини</a></li>
-                  <li class="dropdown__item"><a href="#">Для блузок/сорочок</a></li>
-                  <li class="dropdown__item"><a href="#">Для суконь</a></li>
-                  <li class="dropdown__item"><a href="#">Для костюмів</a></li>
-                  <li class="dropdown__item"><a href="#">Для спідниць</a></li>
-                  <li class="dropdown__item"><a href="#">Для брюк</a></li>
-                  <li class="dropdown__item"><a href="#">Для курток/плащів</a></li>
-                  <li class="dropdown__item"><a href="#">Для пальто</a></li>
-                  <li class="dropdown__item"><a href="#">Для святкового одягу</a></li>
-                  <li class="dropdown__item"><a href="#">Для дитячого одягу</a></li>
-                  <li class="dropdown__item"><a href="#">Для оздоблення</a></li>
-                  <li class="dropdown__item"><a href="#">Підкладка</a></li>
-                </ul>
-              </li>
-              <li class="menu__catalog">
-                <a href="html/catalog.html">Новинки</a>
-              </li>
-              <li class="menu__catalog">
-                <a href="html/catalog.html">Хіти продаж</a>
-              </li>
-              <li class="menu__catalog">
-                <a href="html/catalog.html">Акції</a>
-              </li>
-              <li class="menu__catalog">
-                <a href="html/catalog.html">Оптовим покупцям</a>
-              </li>
+              </div>
+
+              <nav class="burger__menu">
+                <nav class="header__top-menu">
+                  <ul class="menu__list">
+                    <li class="menu__item">
+                      <a href="/index.html">Головна</a>
+                    </li>
+                    <li class="menu__item">
+                      <a href="/html/about.html">Про нас</a>
+                    </li>
+                    <li class="menu__item">
+                      <a href="/html/blog.html">Блог</a>
+                    </li>
+                    <li class="menu__item">
+                      <a href="/html/delivery.html">Оплата і доставка</a>
+                    </li>
+                    <li class="menu__item">
+                      <a href="/html/faq.html">Поширені питання</a>
+                    </li>
+                    <li class="menu__item">
+                      <a href="/html/">Відгуки</a>
+                    </li>
+                  </ul>
+                </nav>
+
+                <button type="button" class="burger__menu-button">
+                  <span></span>
+                </button>
+              </nav>
             </nav>
           </div>
         </div>
@@ -226,24 +275,26 @@
       <main>
         <!-- Hero -->
         <section class="hero">
-          <h1 class="hero__title">
-            Тканини оптом і дрібним оптом за кращими цінами!
-          </h1>
+          <div class="container">
+            <h1 class="hero__title">
+              Тканини оптом і дрібним оптом за кращими цінами!
+            </h1>
+          </div>
 
           <div class="hero__container">
-            <div class="hero__slider slider-hero">
-              <div class="slider-hero__img">
+            <div class="hero__slider">
+              <div class="hero__slider-img">
                 <img
                   src="images/hero/slider_1.jpg"
                   alt="Весняні тканини з квітами"
                 />
               </div>
               <i class="fa-solid fa-chevron-left"></i>
-              <h2 class="slider-hero__title">
+              <h2 class="hero__slider-title">
                 <a href="html/catalog.html">Нова колекція весна-літо 2024</a>
               </h2>
               <i class="fa-solid fa-chevron-right"></i>
-              <a href="html/catalog.html" class="slider-hero__btn"
+              <a href="html/catalog.html" class="hero__slider-btn"
                 >Перейти до каталогу</a
               >
             </div>
@@ -253,7 +304,7 @@
         <!-- Categories -->
         <section class="categories">
           <div class="container">
-            <div class="categories__title title">
+            <div class="categories__title">
               <a href="html/catalog.html"
                 ><h2 class="title__new">Новинки</h2></a
               >
@@ -590,7 +641,7 @@
             </div>
 
             <div class="about__bottom">
-              <div class="about__story story">
+              <div class="about__story">
                 <div class="story__item first">
                   <h3 class="story__item-title">
                     Чому вигідно обрати «Palmira Textile»?
