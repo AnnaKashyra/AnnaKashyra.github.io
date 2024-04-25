@@ -40,7 +40,6 @@
   box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
   background-color: var(--primery-bg-color);
   border: 1px solid #fffefc;
-  /* border: 2px solid var(--element-bg-color); */
   border-radius: 0.5rem;
   color: var(--primary-text-color);
 }
@@ -60,8 +59,12 @@
 .form__email input:focus,
 .form__tel input:focus,
 .form__text textarea:focus {
-  border-color: var(--active-color);
+  border-color: var(--element-bg-color);
   outline: 0;
+}
+
+.invalid {
+  border: 1px solid red;
 }
 
 /* Order */

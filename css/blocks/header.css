@@ -9,13 +9,14 @@
 	color: var(--element-text-color);
 }
 
-/* .fixed {
+.fixed .header__catalog {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 100;
-} */
+  transition: all .3s ease;
+}
 
 .header__top-container,
 .header__body-container,
@@ -152,7 +153,6 @@
 	box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
 	background-color: var(--primery-bg-color);
 	border: 1px solid #fffefc;
-	/* border: 2px solid var(--element-bg-color); */
 	border-radius: 0.5rem;
 	color: var(--primary-text-color);
 }
@@ -243,6 +243,10 @@
 .dropdown__catalog,
 .burger__menu {
 	display: none;
+}
+
+.dropdown__catalog .common__btn:hover{
+  background-color: var(--element-bg-color);
 }
 
 .burger__menu-button {

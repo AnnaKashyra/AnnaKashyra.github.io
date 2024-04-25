@@ -64,7 +64,7 @@
                     ><i class="fa-brands fa-tiktok"></i
                   ></a>
                 </li>
-                <li class="contacts__item contacts__btn">
+                <li class="contacts__item contacts__btn active">
                   <a href="/html/contacts.html">Контакти</a>
                 </li>
               </ul>
@@ -404,7 +404,6 @@
               </p>
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10996.861640750474!2d30.6426392!3d46.444428699999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c6332bd2fb21fd%3A0xbc41e26a812e8cc1!2z77iP0KLQutCw0L3QuCDQn9Cw0LvRjNC80LjRgNCwINCi0LXQutGB0YLQuNC70Ywg4oSWNDQzOCDQntC_0YIsINC80LXQu9C60LjQuSDQntC_0YIsINCU0YDQvtC_!5e0!3m2!1suk!2sua!4v1712958786891!5m2!1suk!2sua"
-                width="300"
                 height="300"
                 style="border: 0"
                 allowfullscreen=""
@@ -420,7 +419,6 @@
               </p>
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2749.214907174706!2d30.6424315751397!3d46.44443866750627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c63283fb0805c3%3A0xc1bdc986e5ca007f!2z0J_QsNC70YzQvNC40YDQsCDRgtC10LrRgdGC0LjQu9GMIOKEljM5NQ!5e0!3m2!1suk!2sua!4v1712958908755!5m2!1suk!2sua"
-                width="300"
                 height="300"
                 style="border: 0"
                 allowfullscreen=""
@@ -436,7 +434,6 @@
               </p>
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2595.4050435800455!2d26.942273575357095!3d49.4201559610112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473206bf934d331d%3A0x6517d8759055fb66!2z0KDQuNC90L7Quiwg0LLRg9C70LjRhtGPINCT0LXQvtC70L7Qs9GW0LIsIDExLCDQpdC80LXQu9GM0L3QuNGG0YzQutC40LksINCl0LzQtdC70YzQvdC40YbRjNC60LAg0L7QsdC70LDRgdGC0YwsIDI5MDAw!5e0!3m2!1suk!2sua!4v1712958984394!5m2!1suk!2sua"
-                width="300"
                 height="300"
                 style="border: 0"
                 allowfullscreen=""
@@ -525,7 +522,7 @@
         <div class="container">
           <h2 class="section__title">Напишіть нам</h2>
 
-          <form class="form" action="">
+          <form id="contactForm" class="form" action="">
             <div class="form__container">
               <div class="form__container-left">
                 <div class="form__first-name">
@@ -591,6 +588,7 @@
                     >Відправити</button
                   >
                 </div>
+                <div id="errorMessages"></div>
               </div>
             </div>
           </form>
@@ -598,132 +596,6 @@
       </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container">
-        <section class="footer__top">
-          <nav class="footer__menu">
-            <ul class="footer__menu-list">
-              <li class="footer__menu-item">
-                <a href="about.html">Про нас</a>
-              </li>
-              <li class="footer__menu-item">
-                <a href="blog.html">Блог</a>
-              </li>
-              <li class="footer__menu-item">
-                <a href="delivery.html">Оплата і доставка</a>
-              </li>
-              <li class="footer__menu-item">
-                <a href="faq.html">Поширені питання</a>
-              </li>
-              <li class="footer__menu-item">
-                <a href="responses.html">Відгуки</a>
-              </li>
-            </ul>
-          </nav>
-
-          <nav class="footer__catalog">
-            <ul class="footer__catalog-list">
-              <li class="footer__catalog-item">
-                <a href="catalog.html">Всі товари</a>
-              </li>
-              <li class="footer__catalog-item">
-                <a href="catalog.html">Тканини за призначенням</a>
-              </li>
-              <li class="footer__catalog-item">
-                <a href="catalog.html">Новинки</a>
-              </li>
-              <li class="footer__catalog-item">
-                <a href="catalog.html">Хіти продаж</a>
-              </li>
-              <li class="footer__catalog-item">
-                <a href="catalog.html">Акції</a>
-              </li>
-              <li class="footer__catalog-item">
-                <a href="catalog.html">Оптовим покупцям</a>
-              </li>
-            </ul>
-          </nav>
-
-          <div class="footer__contacts">
-            <ul class="footer__contacts-list">
-              <li class="footer__contacts-item">
-                <a href="contacts.html">Зв'яжіться з нами</a>
-              </li>
-              <li class="footer__contacts-item">
-                <a href="tel:+380962688839"
-                  ><i class="fa-solid fa-phone"></i>+380 96 268 88 39</a
-                >
-              </li>
-              <li class="footer__contacts-item">
-                <a href="#"
-                  ><i class="fa-brands fa-telegram"></i>Написати в Телеграм</a
-                >
-              </li>
-              <li class="footer__contacts-item">
-                <a href="#"
-                  ><i class="fa-brands fa-viber"></i>Написати у Вайбер</a
-                >
-              </li>
-              <li class="footer__contacts-item">
-                <a href="/exercises/index.html">Exercises</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="footer__address">
-            <div class="address__list">
-              <p class="address__list-title">
-                <a href="contacts.html">Наша адреса:</a>
-              </p>
-              <div class="address__list-item">
-                м. Одеса, <br />
-                ринок «7 км», маг. №4438
-              </div>
-              <div class="address__list-item">
-                м. Хмельницький, <br />
-                вул. Геологів 11
-              </div>
-            </div>
-
-            <div class="social__list">
-              <p class="social__list-title">Ми у соцмережах</p>
-              <a href="#"><i class="fa-brands fa-facebook"></i></a>
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
-              <a href="#"><i class="fa-brands fa-youtube"></i></a>
-              <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-            </div>
-          </div>
-        </section>
-      </div>
-
-      <section class="footer__bottom">
-        <a href="#"
-          ><span class="footer__bottom-terms">Terms &amp; Conditions</span></a
-        >
-        <a href="#"
-          ><span class="footer__bottom-privacy">Privacy Policy</span></a
-        >
-        <span class="footer__bottom-copy">&copy; 2024 All rights reserve</span>
-      </section>
-    </footer>
-
-    <script>
-      var tabs = document.querySelectorAll(".tabs li");
-
-      tabs.forEach(function (tab) {
-        tab.addEventListener("click", function () {
-          tabs.forEach((t) => t.classList.remove("is__active"));
-          tab.classList.add("is__active");
-
-          var li_index = Array.from(tab.parentNode.children).indexOf(tab);
-          var panels = document.querySelectorAll(".tabs__panel");
-
-          panels.forEach((panel, index) =>
-            panel.classList.toggle("is__active", index === li_index)
-          );
-        });
-      });
-    </script>
+    <script src="/js/app.js"></script>
   </body>
 </html>

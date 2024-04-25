@@ -36,6 +36,10 @@
   color: var(--element-bg-color);
 }
 
+.aside__header .fa-chevron-right{
+  display: none;
+}
+
 .aside__categories li {
   width: 100%;
   padding: 0.3rem 0;
@@ -89,7 +93,7 @@
   .aside__container{
     position: relative;
   }
-
+ 
   .aside__header h2:hover{
     color: var(--active-color);
   }
