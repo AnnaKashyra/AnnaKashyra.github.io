@@ -22,10 +22,18 @@
 .profile__address-address {
   display: inline-block;
   color: var(--element-bg-color);
-  width: 35%;
+  width: 45%;
 }
 
 .edit a,
 .profile__address-value a {
   color: var(--active-color);
+}
+
+/* Media */
+/* Mobile */
+@media (max-width: 36rem) {
+  .profile__data {
+    padding: 1rem;
+  }
 }

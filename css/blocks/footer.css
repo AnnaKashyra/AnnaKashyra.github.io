@@ -65,6 +65,22 @@
   padding: 0 2rem;
 }
 
+/* Media */
+/* Mobile */
+@media (max-width: 26.8rem) {
+  .footer__menu,
+  .footer__catalog,
+  .footer__contacts {
+    border-bottom: 1px solid var(--element-text-color);
+  }
 
+  .footer__bottom a {
+    display: block;
+    padding: 0.2rem;
+  }
 
-
+  .footer__bottom-privacy:before,
+  .footer__bottom-privacy:after {
+    display: none;
+  }
+}

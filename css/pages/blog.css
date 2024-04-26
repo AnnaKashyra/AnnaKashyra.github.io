@@ -59,12 +59,14 @@
 } */
 
 /* Mobile */
-@media (max-width: 36rem){
-  .blog__img, .blog__inner{
+@media (max-width: 36rem) {
+  .blog__img,
+  .blog__inner {
     flex-basis: 100%;
+    padding-left: 0;
   }
 
-  .blog__img{
+  .blog__img {
     margin-bottom: 1rem;
   }
 }

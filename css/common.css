@@ -15,10 +15,10 @@
 
   --primary-font-family: "Inter Tight", sans-serif;
 
-  --primary-font-size: clamp(0.75rem, 0.5833rem + 0.463vw, 1rem);
+  --primary-font-size: clamp(0.75rem, 0.6786rem + 0.3571vw, 1rem);
 
-  --mb-small: clamp(1rem, 0.3333rem + 1.8519vw, 2rem);
-  --mb-large: clamp(2rem, 1.3333rem + 1.8519vw, 3rem);;
+  --mb-small: clamp(1rem, 0.7143rem + 1.4286vw, 2rem);
+  --mb-large: clamp(2rem, 1.7143rem + 1.4286vw, 3rem);
 
   --currency-symbol: "\20B4";
 }
@@ -38,7 +38,7 @@ body {
 }
 
 header {
-  font-size: 0.875rem;
+  font-size: clamp(0.625rem, 0.5536rem + 0.3571vw, 0.875rem);
 }
 
 main {
@@ -46,7 +46,7 @@ main {
 }
 
 footer {
-  font-size: 0.875rem;
+  font-size: clamp(0.625rem, 0.5536rem + 0.3571vw, 0.875rem);
   color: var(--element-text-color);
   background-color: var(--element-bg-color);
 }
@@ -57,15 +57,15 @@ h3 {
   font-weight: 600;
 }
 h1 {
-  font-size: clamp(1.25rem, 1.0833rem + 0.463vw, 1.5rem);
+  font-size: clamp(1rem, 0.8571rem + 0.7143vw, 1.5rem);
 }
 
 h2 {
-  font-size: clamp(1.125rem, 1.0417rem + 0.2315vw, 1.25rem);
+  font-size: clamp(0.875rem, 0.7679rem + 0.5357vw, 1.25rem);
 }
 
 h3 {
-  font-size: clamp(1rem, 0.9167rem + 0.2315vw, 1.125rem);
+  font-size: clamp(0.75rem, 0.6429rem + 0.5357vw, 1.125rem);
 }
 
 ul,

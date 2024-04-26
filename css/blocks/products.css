@@ -21,6 +21,7 @@
   margin-bottom: 0.7rem;
   position: relative;
   display: inline-block;
+  text-align: center;
   overflow: hidden;
 }
 
@@ -97,7 +98,7 @@
 
 .product__price-retail {
   margin-bottom: 0.8rem;
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 0.9286rem + 0.3571vw, 1.25rem);
   color: var(--active-color);
 }
 
@@ -139,8 +140,8 @@
 } */
 
 /* Mobile */
-@media (max-width: 36rem){
-  .product__img{
+@media (max-width: 36rem) {
+  .product__img {
     overflow: visible;
   }
 }

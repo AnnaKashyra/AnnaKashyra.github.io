@@ -47,8 +47,8 @@ hr {
 } */
 
 /* Tablet */
-@media (max-width: 48rem){
-  .categories__title{
+@media (max-width: 48rem) {
+  .categories__title {
     width: 80%;
   }
 }

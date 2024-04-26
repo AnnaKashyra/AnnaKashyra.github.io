@@ -134,7 +134,13 @@
 }
 
 /* Mobile */
-/* @media (max-width: 36rem){
+@media (max-width: 36rem) {
+  .form__container {
+    width: 100%;
+  }
 
-} */
-
+  .form__container-left,
+  .form__container-right {
+    padding: 0;
+  }
+}
