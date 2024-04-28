@@ -70,20 +70,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 /////////////////////////////////////
 
-// Catalog filtres ///////////////////
-
-document.addEventListener("DOMContentLoaded", function () {
-  const button = document.querySelector('.common__btn[name="choice__button"]');
-  const filterForm = document.getElementById("filter");
-
-  button.addEventListener("click", function (event) {
-    event.preventDefault();
-    const filters = document.querySelector(".filters");
-    filters.classList.toggle("open");
-  });
-});
-
-// ///////////////////////////////////
 
 //  Product /////////////////////////
 
@@ -177,7 +163,39 @@ const product4 = new Product(
 
 // //////////////////////////////////
 
-// Cart /////////////////////////////
+// Add product to Cart ///////////////////
+
+let shoppingCart = new Cart();
+
+function CardProduct(item) {
+  this.item = item;
+  let addToCart = this.item.querySelector('.add-to-cart');
+  if (addToCart) {
+    addToCart.addEventListener('click', function(event) {
+
+      let parent = event.target.closest('.product');      
+      let id = parent.querySelector('.product__content').getAttribute('id');
+      let name = parent.querySelector('.product__name').innerText;
+      let price = parent.querySelector('.product__price-retail').innerText.replace(',', '.');
+
+      let product = new Product(id, name, price);
+      product = {...product, amount: 1};
+      console.log(product);
+
+      shoppingCart.addItemToCart(product);
+
+      console.log(shoppingCart.totalAmount());
+      console.log(shoppingCart.totalInCart());
+    });
+  }
+}                       // додавання товару до кошику
+
+const productCards = document.querySelectorAll('.product');
+productCards.forEach(item => new CardProduct(item));
+
+/////////////////////////////////////
+
+// Cart calculations ////////////////
 
 const currency = (total) =>
   parseFloat(Math.round(total * 100) / 100).toFixed(2); // підраховує вартість кількох одиниць
@@ -197,17 +215,25 @@ function Cart(shipping = 0) {
   } // визначає властивості одиниці товару
 
   this.addItemToCart = function (product) {
-    for (let item in cart) {
-      if (cart[item].id === product.id) {
-        // перевіряємо, чи є вже продукт у кошику
-        cart[item].amount += product.amount;
-        this.saveCart();
-        return;
-      }
+    // for (let item in cart) {
+    //   if (cart[item].id === product.id) {
+    //     // перевіряємо, чи є вже продукт у кошику
+    //     cart[item].amount += product.amount;
+    //     this.saveCart();
+    //     return;
+    //   }
+    // } ///////////////////// замінено кодом нижче
+
+    let inCart = cart.some(item => item.id === product.id);
+    if(inCart) {
+      let index = cart.findIndex(item => item.id === product.id);
+      cart[index].amount += product.amount;
+    } else {
+      let item = new Item(product.id, product.price, product.amount);
+      cart.push(item);
     }
 
-    let item = new Item(product.id, product.price, product.amount);
-    cart.push(item);
+    
     this.saveCart(); // додає товар у кошик і зберігає
   };
 
@@ -264,8 +290,6 @@ function Cart(shipping = 0) {
   };
 }
 
-let shoppingCart = new Cart();
-
 let productItem = { ...product2, amount: 5 };
 shoppingCart.addItemToCart(productItem);
 
@@ -280,6 +304,8 @@ shoppingCart.clearCart();
 
 // let cart = new cartItem(productItem);
 // console.log(cart.total());
+
+///////////////////////////////////////
 
 // Tabs//////////////////////////////
 
@@ -300,92 +326,6 @@ tabs.forEach(function (tab) {
 });
 
 // ///////////////////////////////////
-
-// Form validation //////////////////
-
-const form = document.getElementById("contactForm");
-const errorMessages = document.getElementById("errorMessages");
-
-form.addEventListener("submit", function (event) {
-  event.preventDefault();
-  errorMessages.innerHTML = "";
-
-  const firstName = document.getElementById("first__name").value.trim();
-  const lastName = document.getElementById("last__name").value.trim();
-  const email = document.getElementById("email").value.trim();
-  const tel = document.getElementById("tel").value.trim();
-  const text = document.getElementById("textarea").value.trim();
-
-  if (firstName === "") {
-    displayError("Введіть ваше ім'я", "first__name");
-    return;
-  }
-
-  if (lastName === "") {
-    displayError("Введіть ваше прізвище", "last__name");
-    return;
-  }
-
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  if (!emailRegex.test(email)) {
-    displayError("Неправильний формат адреси", "email");
-    return;
-  }
-
-  const telTest = /^\+?3?8?(0\d{9})$/;
-  if (!telTest.test(tel)) {
-    displayError("Неправильний формат номеру", "tel");
-    return;
-  }
-
-  if (text === "") {
-    displayError("Ви нічого не написали", "textarea");
-    return;
-  }
-
-  alert("Ваше повідомлення відправлено!");
-  form.reset();
-});
-
-function displayError(message, inputName) {
-  const errorMessage = document.createElement("div");
-  errorMessage.textContent = message;
-  errorMessages.appendChild(errorMessage);
-  document.getElementById(inputName).classList.add("error");
-}
-
-form.querySelectorAll("input").forEach((input) => {
-  input.addEventListener("input", function () {
-    errorMessages.innerHTML = "";
-    this.classList.remove("error");
-  });
-});
-// ///////////////////////////////////
-
-// Faq-open //////////////////////////
-
-document.addEventListener("DOMContentLoaded", function () {
-  const accordionHeaders = document.querySelectorAll(".accordion__item-header");
-
-  accordionHeaders.forEach((header) => {
-    header.addEventListener("click", function () {
-      const item = this.parentElement;
-      const content = item.querySelector(".accordion__item-content");
-      const close = this.querySelector("span");
-
-      item.classList.toggle("open");
-      if (item.classList.contains("open")) {
-        content.style.maxHeight = content.scrollHeight + "px";
-        close.style.transform = "rotate(45deg)";
-      } else {
-        content.style.maxHeight = null;
-        close.style.transform = "rotate(0deg)";
-      }
-    });
-  });
-});
-
-// ////////////////////////////////////
 
 // Footer /////////////////////////////
 
@@ -526,6 +466,54 @@ template.innerHTML = `
 let clone = template.content.cloneNode(true);
 document.body.appendChild(clone);
 
+////////////////////////////////////////////
+function main() {
+  const productContainer = document.querySelector('.product__container');
+  console.log(productContainer);
+
+  let productCards = document.querySelectorAll('.product');
+  productCards.forEach(item => new CardProduct(item));
+
+  let products = [];
+  productCards.forEach(function(item) {
+    let id = item.querySelector('.product__content').getAttribute('id');
+    let name = item.querySelector('.product__name').innerText;
+    let price = item.querySelector('.product__price-retail').innerText.replace(',', '.');
+    let action = item.querySelector('.badge').textContent;
+    products = [...products, {id: id, name: name, price: parseFloat(price), action: action}];    
+  });
+
+  console.log(products);  // отримання масиву з об'єктів, які представляють продукт з його властивостями
+
+  const findByProps = function(items, props, what) {
+    let result = [];
+
+    items.find((item, index) => {
+      if (item[props] === what) {
+        result.push(items[index])
+      }
+    })
+    return result;
+  }
+  console.log(findByProps(products, "action", 'Sale'));
+  console.log(findByProps(products, "action", 'New')); 
+  // сортування продуктів за певною властивістю
+
+  const compare = (key, order='asc') => (a, b) => {
+    if(!a.hasOwnProperty(key) || !b.hasOwnProperty(key)) return 0;
+    const A = (typeof a[key]  === 'string') ? a[key].toUpperCase() : a[key];
+    const B = (typeof b[key]  === 'string') ? b[key].toUpperCase() : b[key];
+
+    let comparison = 0;
+    comparison = (A>B) ? 1 : -1;
+    return (order === 'desc') ? -comparison : comparison;
+  }
+  
+  let sorted = products.sort(compare('price', 'asc'));
+  console.log(sorted);
+  // сортування товарів за ціною від найменшої до найбільшої
+}                   
+
 if (document.readyState === "loading") {
   document.addEventListener("DOMContentLoaded", () => {
     main();
@@ -533,4 +521,5 @@ if (document.readyState === "loading") {
 } else {
   main();
 }
+
 // /////////////////////////////////////////
