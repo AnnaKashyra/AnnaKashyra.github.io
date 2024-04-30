@@ -186,6 +186,11 @@
   font-size: 1rem;
 }
 
+#cart-amount {
+ padding-left: 0.2rem;
+ color: var(--active-color);
+}
+
 /* Drop down menu */
 .menu__catalog {
   position: relative;

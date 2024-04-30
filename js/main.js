@@ -173,18 +173,22 @@ function CardProduct(item) {
   if (addToCart) {
     addToCart.addEventListener('click', function(event) {
 
-      let parent = event.target.closest('.product');      
-      let id = parent.querySelector('.product__content').getAttribute('id');
-      let name = parent.querySelector('.product__name').innerText;
-      let price = parent.querySelector('.product__price-retail').innerText.replace(',', '.');
+      let parent = event.target.closest('.product');
+      let id = parent.dataset.id;
+      let product = productList.getProductById(products, id);
+      
+      // let id = parent.querySelector('.product__content').getAttribute('id');
+      // let name = parent.querySelector('.product__name').innerText;
+      // let price = parent.querySelector('.product__price-retail').innerText.replace(',', '.');
 
-      let product = new Product(id, name, price);
+      // let product = new Product(id, name, price);
       product = {...product, amount: 1};
-      console.log(product);
-
+      
       shoppingCart.addItemToCart(product);
+      document.getElementById('cart-amount').textContent = shoppingCart.totalAmount();
+      
 
-      console.log(shoppingCart.totalAmount());
+      
       console.log(shoppingCart.totalInCart());
     });
   }
@@ -467,50 +471,163 @@ let clone = template.content.cloneNode(true);
 document.body.appendChild(clone);
 
 ////////////////////////////////////////////
+
+// Product List ////////////////////////////
+
+function ProductList() {
+  this.productTemplate = (product) => `
+    <article class="product">
+      <div class="product__img">
+        <div class="badge badge__${product.badge.bg}">${product.badge.title}</div>
+        <a href="#">
+          <img
+            src="${product.cover}"
+            alt="${product.name}"
+          />
+        </a>
+
+        <div class="product__icons">
+          <a href="#!" class="fas fa-heart add-to-wishlist"></a>
+          <a href="#!" class="fas fa-eye show-detail"></a>
+        </div>
+      </div>
+
+      <div class="product__content" data-id="${product.id}">
+        <div class="product__article">${product.description}</div>
+        <div class="product__colors"></div>
+        <h3 class="product__name">
+          <a href="#">${product.name}</a>
+        </h3>
+
+        <div class="product__buy">
+          <div class="product__price">
+            <div class="product__price-retail">${product.price}</div>
+            <div class="product__price-wholesale">${product.priceWholesale}</div>
+            <span>від 10 м. пог.</span>
+          </div>
+
+          <div class="common__button">
+            <a href="#!" class="common__btn add-to-cart">У кошик</a>
+          </div>
+        </div>
+      </div>
+    </article>
+  `;
+
+  this.populateProductList = function(products) {
+    let content = '';
+    products.forEach(item => content += this.productTemplate(item));
+    return content;
+  }
+
+  this.getProductById = (products, id) => products.find(item => item.id === id);
+}
+
+let productList = new ProductList();
+console.log(products);
+
+////////////////////////////////////////////
+
+// Categories sort /////////////////////////
+// const liElement = (item) =>
+// `<li><a href="#!" data-id"${item.id}">${item.name}</a></li>`;
+
+// const ulElement = items => {
+//   let ul = document.createElement('ul');
+//   ul.setAttribute('class', "aside__categories");
+
+//   let res = '';
+//   for (let item of items) {
+//     res += liElement(item);
+//   }
+//   ul.innerHTML = res;
+//   return ul;
+// }
+
+// const destinctSections = items => {
+//   let mapped = [...items.map(item => item.section)];
+//   let unique = [...new Set(mapped)];
+//   return unique;
+// }
+
+// function categoriesCollation(distinct, categories) {
+//   let result = [];
+//   let i = 0;
+//   for (let section of distinct) {
+//     result[i] = categories.filter(item => item.section === section);
+//     i++;
+//   }
+//   return result;
+// }
+
+// let sectionName = section => {
+//   let div = document.createElement('div');
+//   div.innerHTML = `<strong>${section}</strong>`;
+//   return div;
+// }
+
+// const populateCategories = (categoryContainer, categories) => {
+//   let distinct = destinctSections(categories);
+//   let collation = categoriesCollation(distinct, categories);
+//   for (let i = 0; i < distinct.length; i++) {
+//     categoryContainer.append(sectionName(distinct[i]));
+//     catigoryContainer.append(ulElement(collation[i]));
+//   }
+// }
+//////////////////////////////////////////////
+
+
 function main() {
   const productContainer = document.querySelector('.product__container');
+  productContainer.innerHTML = productList.populateProductList(products);
   console.log(productContainer);
 
   let productCards = document.querySelectorAll('.product');
   productCards.forEach(item => new CardProduct(item));
 
-  let products = [];
-  productCards.forEach(function(item) {
-    let id = item.querySelector('.product__content').getAttribute('id');
-    let name = item.querySelector('.product__name').innerText;
-    let price = item.querySelector('.product__price-retail').innerText.replace(',', '.');
-    let action = item.querySelector('.badge').textContent;
-    products = [...products, {id: id, name: name, price: parseFloat(price), action: action}];    
-  });
+  // const catalogAside = document.getElementById('catalog__aside');
+  // if(catalogAside) {
+  //   const categoryContainer = document.getElementById('category__container');
+  //   populateCategories(categoryContainer, categories);
+  // }
 
-  console.log(products);  // отримання масиву з об'єктів, які представляють продукт з його властивостями
+  // let products = [];
+  // productCards.forEach(function(item) {
+  //   let id = item.querySelector('.product__content').getAttribute('id');
+  //   let name = item.querySelector('.product__name').innerText;
+  //   let price = item.querySelector('.product__price-retail').innerText.replace(',', '.');
+  //   let action = item.querySelector('.badge').textContent;
+  //   products = [...products, {id: id, name: name, price: parseFloat(price), action: action}];    
+  // });
 
-  const findByProps = function(items, props, what) {
-    let result = [];
+  // console.log(products);  // отримання масиву з об'єктів, які представляють продукт з його властивостями
 
-    items.find((item, index) => {
-      if (item[props] === what) {
-        result.push(items[index])
-      }
-    })
-    return result;
-  }
-  console.log(findByProps(products, "action", 'Sale'));
-  console.log(findByProps(products, "action", 'New')); 
-  // сортування продуктів за певною властивістю
+  // const findByProps = function(items, props, what) {
+  //   let result = [];
 
-  const compare = (key, order='asc') => (a, b) => {
-    if(!a.hasOwnProperty(key) || !b.hasOwnProperty(key)) return 0;
-    const A = (typeof a[key]  === 'string') ? a[key].toUpperCase() : a[key];
-    const B = (typeof b[key]  === 'string') ? b[key].toUpperCase() : b[key];
+  //   items.find((item, index) => {
+  //     if (item[props] === what) {
+  //       result.push(items[index])
+  //     }
+  //   })
+  //   return result;
+  // }
+  // console.log(findByProps(products, "action", 'Sale'));
+  // console.log(findByProps(products, "action", 'New')); 
+  // // сортування продуктів за певною властивістю
 
-    let comparison = 0;
-    comparison = (A>B) ? 1 : -1;
-    return (order === 'desc') ? -comparison : comparison;
-  }
+  // const compare = (key, order='asc') => (a, b) => {
+  //   if(!a.hasOwnProperty(key) || !b.hasOwnProperty(key)) return 0;
+  //   const A = (typeof a[key]  === 'string') ? a[key].toUpperCase() : a[key];
+  //   const B = (typeof b[key]  === 'string') ? b[key].toUpperCase() : b[key];
+
+  //   let comparison = 0;
+  //   comparison = (A>B) ? 1 : -1;
+  //   return (order === 'desc') ? -comparison : comparison;
+  // }
   
-  let sorted = products.sort(compare('price', 'asc'));
-  console.log(sorted);
+  // let sorted = products.sort(compare('price', 'asc'));
+  // console.log(sorted);
   // сортування товарів за ціною від найменшої до найбільшої
 }                   
 

@@ -12,7 +12,7 @@
 .table__header {
   display: table-header-group;
   background-color: var(--element-bg-color);
-  font-size: 0.875rem;
+  font-size: clamp(0.625rem, 0.5536rem + 0.3571vw, 0.875rem);
   text-transform: uppercase;
   text-align: center;
   color: var(--element-text-color);
@@ -81,4 +81,23 @@
 /* Order */
 .order {
   margin-bottom: var(--mb-large);
+}
+
+/* Media */
+@media (max-width: 48rem) {
+  .table,  
+  .table__body,
+  .row, .cell{
+    display: block;
+  }
+
+  .table__header{
+    display: none;
+  }
+
+  .cell__flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }

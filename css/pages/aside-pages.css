@@ -13,7 +13,7 @@
 }
 
 .account__aside,
-.catalog__aside,
+#catalog__aside,
 .blog__aside {
   flex-basis: 15%;
 }

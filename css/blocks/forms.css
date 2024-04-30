@@ -48,10 +48,17 @@
   height: 10rem;
 }
 
-.form__container-right .common__button {
+.form__button {
   text-align: right;
   margin-bottom: 1rem;
   cursor: pointer;
+}
+
+.form__button input {
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  color: var(--element-text-color);
 }
 
 .form__first-name input:focus,
@@ -71,6 +78,7 @@
 .form__delivery {
   margin-bottom: 1rem;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -142,5 +150,14 @@
   .form__container-left,
   .form__container-right {
     padding: 0;
+  }
+
+  .delivery__country,
+  .delivery__delivery {
+  flex-basis: 100%;  
+  }
+
+  .delivery__country{
+    margin-bottom: 1rem;
   }
 }

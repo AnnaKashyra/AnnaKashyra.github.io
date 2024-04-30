@@ -49,7 +49,7 @@
   cursor: pointer;
 }
 
-.common__btn {
+.common__btn, .form__button {
   display: inline-block;
   padding: 1rem 2rem;
   background-color: var(--element-bg-color);
@@ -61,7 +61,7 @@
   cursor: pointer;
 }
 
-.common__btn:hover {
+.common__btn:hover, .form__button:hover {
   background-color: var(--active-color);
   color: var(--element-text-color);
 }
