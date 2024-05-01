@@ -1,38 +1,18 @@
-// import React from "react"; 
+import BlogContext, { BlogProvider } from "./BlogContext";
+import Layout from "./Layout";
+import Header from "./Header";
+import BlogInfo from "./BlogInfo";
+import Posts from "./Posts";
 
-// class Blog extends React.Component {
-
-//     constructor(props:any) {
-//         super(props);
-//         this.state = { post: props.post };
-//     }
-
-//     render() {
-//        return(
-//         <article className='post'>
-//             <div className='cover-container'>
-//               <img src={this.props.post.cover} alt={this.props.post.title} />
-//             </div>
-//             <div className='post-footer'>
-//               <h3>{this.props.post.title} {this.props.post.id}</h3>
-//               <p>{this.props.post.content}</p>
-//             </div>
-//         </article>
-//         );
-//     }
-// }
-
-const Blog = ({ post }: { post: { id: number, title: string, content: string, cover: string, likes: number } }) => {
+function Blog() {
   return (
-      <article className='post'>
-          <div className='cover-container'>
-              <img src={post.cover} alt={post.title} />
-          </div>
-          <div className='post-footer'>
-              <h3>{post.title} {post.id}</h3>
-              <p>{post.content}</p>
-          </div>
-      </article>
+    <BlogProvider>
+      <Layout>
+        <Header />
+        <BlogInfo />
+        <Posts />
+      </Layout>
+    </BlogProvider>
   );
 }
 
